@@ -17,6 +17,7 @@ Plugin 'wting/rust.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'phildawes/racer'
 Plugin 'bling/vim-airline'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()
 filetype plugin indent on  
@@ -32,9 +33,10 @@ set number
 set ai
 set mouse=a
 set autowrite
+set background=dark
 set t_Co=256
 set term=xterm-256color
-colorscheme fruity
+colorscheme solarized
 let g:ycm_autoclose_preview_window_after_completion=1
 set hidden
 let g:racer_cmd = "/Users/shockham/.vim/bundle/racer/target/release/racer"
