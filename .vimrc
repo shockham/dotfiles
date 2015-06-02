@@ -37,8 +37,12 @@ set background=dark
 set t_Co=256
 set term=xterm-256color
 colorscheme solarized
-let g:ycm_autoclose_preview_window_after_completion=1
 set hidden
+
+
+let g:ycm_autoclose_preview_window_after_completion=1
 let g:racer_cmd = "/Users/shockham/.vim/bundle/racer/target/release/racer"
+let g:airline_powerline_fonts=1
+let g:airline_extensions = []
+
 let $RUST_SRC_PATH="/Users/shockham/Code/rust/src/"
-let g:airline_powerline_fonts = 1
