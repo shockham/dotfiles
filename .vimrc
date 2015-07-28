@@ -19,6 +19,10 @@ Plugin 'phildawes/racer'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tikhomirov/vim-glsl'
+Plugin 'Raimondi/delimitMate'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'hylang/vim-hy'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on  
