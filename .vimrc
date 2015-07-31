@@ -4,25 +4,28 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" General
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-leiningen'
 Plugin 'Valloric/YouCompleteMe'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-Plugin 'jdonaldson/vaxe'
-Plugin 'wting/rust.vim'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'phildawes/racer'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tikhomirov/vim-glsl'
 Plugin 'Raimondi/delimitMate'
+Plugin 'kien/ctrlp.vim'
+
+" Language specific
+Plugin 'tpope/vim-fireplace'
+Plugin 'tpope/vim-leiningen'
+Plugin 'jdonaldson/vaxe'
+Plugin 'wting/rust.vim'
+Plugin 'phildawes/racer'
+Plugin 'tikhomirov/vim-glsl'
 Plugin 'lambdatoast/elm.vim'
 Plugin 'hylang/vim-hy'
-Plugin 'kien/ctrlp.vim'
 
 call vundle#end()
 filetype plugin indent on  
@@ -43,6 +46,20 @@ set term=xterm-256color
 colorscheme solarized
 set hidden
 set timeoutlen=50
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {
+    \ "mode": "active",
+    \ "active_filetypes": [],
+    \ "passive_filetypes": ["haxe"] }
 
 "  youcompleteme 
 let g:ycm_autoclose_preview_window_after_completion=1
