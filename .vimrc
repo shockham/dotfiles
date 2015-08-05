@@ -23,9 +23,6 @@ Plugin 'tpope/vim-leiningen'
 Plugin 'jdonaldson/vaxe'
 Plugin 'wting/rust.vim'
 Plugin 'phildawes/racer'
-Plugin 'tikhomirov/vim-glsl'
-Plugin 'lambdatoast/elm.vim'
-Plugin 'hylang/vim-hy'
 
 call vundle#end()
 filetype plugin indent on  
