@@ -23,5 +23,11 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
+# default editor is vim
+export EDITOR='vim'
+
+# some settings for android
+export ANDROID_NDK_DIR="/opt/android-ndk/"
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

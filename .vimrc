@@ -14,8 +14,9 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'Raimondi/delimitMate'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'tpope/vim-fugitive'
 
 " Language specific
 Plugin 'tpope/vim-fireplace'
@@ -23,6 +24,7 @@ Plugin 'tpope/vim-leiningen'
 Plugin 'jdonaldson/vaxe'
 Plugin 'wting/rust.vim'
 Plugin 'phildawes/racer'
+Plugin 'raichoo/purescript-vim'
 
 call vundle#end()
 filetype plugin indent on  
@@ -56,7 +58,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {
     \ "mode": "active",
     \ "active_filetypes": [],
-    \ "passive_filetypes": ["haxe"] }
+    \ "passive_filetypes": ["haxe", "html"] }
 
 "  youcompleteme 
 let g:ycm_autoclose_preview_window_after_completion=1
