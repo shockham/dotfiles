@@ -41,7 +41,6 @@ set mouse=a
 set autowrite
 set background=dark
 set t_Co=256
-set term=xterm-256color
 colorscheme solarized
 set hidden
 set timeoutlen=50
