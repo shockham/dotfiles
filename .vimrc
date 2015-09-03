@@ -17,6 +17,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
+Plugin 'jpalardy/vim-slime'
 
 " Language specific
 Plugin 'tpope/vim-fireplace'
@@ -43,7 +44,6 @@ set background=dark
 set t_Co=256
 colorscheme solarized
 set hidden
-set timeoutlen=50
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -68,3 +68,6 @@ let $RUST_SRC_PATH="/Users/shockham/Code/rust/src/"
 
 " airline 
 let g:airline_powerline_fonts=1
+
+" vim-slime settings
+let g:slime_target = "tmux"
