@@ -8,12 +8,9 @@ ZSH_THEME="miloshadzic"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git tmux pip sudo)
 
 # User configuration
-
-# so hostname doesn't show for default user
-DEFAULT_USER="shockham"
 
 # alias tmux so that it opens with 256 colours
 alias tmux='tmux -2'

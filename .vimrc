@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
@@ -16,16 +17,11 @@ Plugin 'bling/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Raimondi/delimitMate'
-Plugin 'tpope/vim-fugitive'
 Plugin 'jpalardy/vim-slime'
 
 " Language specific
-Plugin 'tpope/vim-fireplace'
-Plugin 'tpope/vim-leiningen'
-Plugin 'jdonaldson/vaxe'
 Plugin 'wting/rust.vim'
 Plugin 'phildawes/racer'
-Plugin 'raichoo/purescript-vim'
 
 call vundle#end()
 filetype plugin indent on  
