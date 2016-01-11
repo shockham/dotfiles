@@ -22,6 +22,7 @@ Plugin 'jpalardy/vim-slime'
 " Language specific
 Plugin 'wting/rust.vim'
 Plugin 'phildawes/racer'
+Plugin 'fsharp/vim-fsharp'
 
 call vundle#end()
 filetype plugin indent on  
@@ -53,7 +54,8 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {
     \ "mode": "active",
     \ "active_filetypes": [],
-    \ "passive_filetypes": ["haxe", "html"] }
+    \ "passive_filetypes": ["haxe", "html", "fsharp"] }
+let g:syntastic_fsharp_checkers = []
 
 "  youcompleteme 
 let g:ycm_autoclose_preview_window_after_completion=1
