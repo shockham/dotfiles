@@ -21,7 +21,7 @@ Plugin 'jpalardy/vim-slime'
 
 " Language specific
 Plugin 'wting/rust.vim'
-Plugin 'phildawes/racer'
+Plugin 'racer-rust/vim-racer'
 Plugin 'fsharp/vim-fsharp'
 
 call vundle#end()
@@ -61,7 +61,7 @@ let g:syntastic_fsharp_checkers = []
 let g:ycm_autoclose_preview_window_after_completion=1
 
 " racer rust auto complete
-let g:racer_cmd = "/Users/shockham/.vim/bundle/racer/target/release/racer"
+let g:racer_cmd = "/Users/shockham/.multirust/toolchains/nightly/cargo/bin/racer"
 let $RUST_SRC_PATH="/Users/shockham/Code/rust/src/"
 
 " airline 
