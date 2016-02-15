@@ -2,5 +2,5 @@
 max-items 100
 # colors
 color listfocus           black  cyan   bold
-color listfocus_unread    magenta cyan   bold
+color listfocus_unread    black cyan   bold
 color info                black  blue   bold
