@@ -15,7 +15,7 @@ plugins=(git tmux pip sudo)
 # alias tmux so that it opens with 256 colours
 alias tmux='tmux -2'
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
