@@ -15,7 +15,7 @@ plugins=(git tmux pip sudo)
 # alias tmux so that it opens with 256 colours
 alias tmux='tmux -2'
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.multirust/toolchains/nightly/cargo/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -28,3 +28,6 @@ export ANDROID_NDK_DIR="/opt/android-ndk/"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# add rust src dir
+export RUST_SRC_PATH=$HOME/Code/rust/src/

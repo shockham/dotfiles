@@ -60,10 +60,6 @@ let g:syntastic_fsharp_checkers = []
 "  youcompleteme 
 let g:ycm_autoclose_preview_window_after_completion=1
 
-" racer rust auto complete
-let g:racer_cmd = "/Users/shockham/.multirust/toolchains/nightly/cargo/bin/racer"
-let $RUST_SRC_PATH="/Users/shockham/Code/rust/src/"
-
 " airline 
 let g:airline_powerline_fonts=1
 

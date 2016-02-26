@@ -241,6 +241,9 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
+  (setq-default rust-enable-racer t)
+  (setq racer-cmd "/Users/shockham/.multirust/toolchains/nightly/cargo/bin/racer")
+  (setq racer-rust-src-path "/Users/shockham/Code/rust/src/")
   )
 
 (defun dotspacemacs/user-config ()
