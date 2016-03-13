@@ -8,16 +8,15 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-sensible'
-Plugin 'tpope/vim-fugitive'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'bling/vim-airline'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'vim-airline/vim-airline'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'jpalardy/vim-slime'
+
+" theme
+Plugin 'andreasvc/vim-256noir'
 
 " Language specific
 Plugin 'wting/rust.vim'
@@ -33,13 +32,13 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set incsearch
-set number
+" set number
 set ai
 set mouse=a
 set autowrite
 set background=dark
 set t_Co=256
-colorscheme solarized
+colorscheme 256_noir
 set hidden
 
 " Syntastic
@@ -62,6 +61,4 @@ let g:ycm_autoclose_preview_window_after_completion=1
 
 " airline 
 let g:airline_powerline_fonts=1
-
-" vim-slime settings
-let g:slime_target = "tmux"
+let g:airline_theme='dark'
