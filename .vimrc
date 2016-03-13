@@ -13,6 +13,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 
 " theme
@@ -61,4 +62,4 @@ let g:ycm_autoclose_preview_window_after_completion=1
 
 " airline 
 let g:airline_powerline_fonts=1
-let g:airline_theme='dark'
+let g:airline_theme='hybrid'
