@@ -33,7 +33,6 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set incsearch
-" set number
 set ai
 set mouse=a
 set autowrite
@@ -41,6 +40,9 @@ set background=dark
 set t_Co=256
 colorscheme 256_noir
 set hidden
+
+" Keybindings
+nmap <silent> <C-c> :%s/\s\+$//<cr>
 
 " Syntastic
 set statusline+=%#warningmsg#

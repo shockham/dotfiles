@@ -15,8 +15,9 @@ plugins=(git tmux pip sudo)
 # alias tmux so that it opens with 256 colours
 alias tmux='tmux -2'
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.multirust/toolchains/nightly/cargo/bin:$HOME/Library/Haskell/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.multirust/toolchains/nightly/cargo/bin:$HOME/Library/Haskell/bin:/Developer/NVIDIA/CUDA-7.5/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export DYLD_LIBRARY_PATH=/Developer/NVIDIA/CUDA-7.5/lib:$DYLD_LIBRARY_PATH
 
 source $ZSH/oh-my-zsh.sh
 
