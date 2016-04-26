@@ -6,14 +6,11 @@ call vundle#begin()
 
 " General
 Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-vinegar'
 Plugin 'tpope/vim-sensible'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 
 " theme
@@ -25,7 +22,7 @@ Plugin 'racer-rust/vim-racer'
 Plugin 'fsharp/vim-fsharp'
 
 call vundle#end()
-filetype plugin indent on  
+filetype plugin indent on
 
 set backspace=2
 syntax on
@@ -43,11 +40,7 @@ set hidden
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
-
-" Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+map - :NERDTreeToggle<CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -59,9 +52,5 @@ let g:syntastic_mode_map = {
     \ "passive_filetypes": ["haxe", "html", "fsharp"] }
 let g:syntastic_fsharp_checkers = []
 
-"  youcompleteme 
+"  youcompleteme
 let g:ycm_autoclose_preview_window_after_completion=1
-
-" airline 
-let g:airline_powerline_fonts=1
-let g:airline_theme='hybrid'
