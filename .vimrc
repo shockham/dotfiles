@@ -17,7 +17,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'andreasvc/vim-256noir'
 
 " Language specific
-Plugin 'wting/rust.vim'
+Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
 Plugin 'fsharp/vim-fsharp'
 
@@ -31,6 +31,7 @@ set tabstop=4
 set shiftwidth=4
 set incsearch
 set ai
+set smartindent
 set mouse=a
 set autowrite
 set background=dark

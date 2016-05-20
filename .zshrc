@@ -11,6 +11,8 @@ plugins=(git tmux pip sudo)
 
 # alias tmux so that it opens with 256 colours
 alias tmux='tmux -2'
+# alias so doesn't refresh on half of the window
+alias irssi='TERM=screen irssi'
 
 # adding to PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.multirust/toolchains/nightly/cargo/bin:$HOME/Library/Haskell/bin:/Developer/NVIDIA/CUDA-7.5/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
