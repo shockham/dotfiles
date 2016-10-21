@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="lambda"
 
 # loaded plugins
-plugins=(git tmux pip sudo)
+plugins=(git tmux pip)
 
 # User configuration
 
@@ -30,3 +30,11 @@ export ANDROID_NDK_DIR="/opt/android-ndk/"
 
 # add rust src dir
 export RUST_SRC_PATH=$HOME/Code/rust/src/
+
+# cuda exports
+export CUDA_HOME=/usr/local/cuda
+export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
+export PATH="$CUDA_HOME/bin:$PATH"
+
+# emscripten
+source $HOME/Code/emsdk_portable/emsdk_env.sh >/dev/null

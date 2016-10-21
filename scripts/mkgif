@@ -3,6 +3,6 @@ VID=$1
 FRAMES_DIR=./"${VID##*/}"_frames
 echo $FRAMES_DIR
 mkdir $FRAMES_DIR
-ffmpeg -i $VID -vf scale=640:-1:flags=lanczos,fps=15 $FRAMES_DIR/ffout%03d.png
+ffmpeg -i $VID -vf scale=1100:-1:flags=lanczos,fps=30 $FRAMES_DIR/ffout%03d.png
 convert -loop 0 $FRAMES_DIR/ffout*.png $VID.gif
 rm -r $FRAMES_DIR
