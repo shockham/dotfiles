@@ -9,7 +9,6 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-sensible'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'kien/ctrlp.vim'
 
@@ -41,7 +40,6 @@ set hidden
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
-map - :NERDTreeToggle<CR>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
