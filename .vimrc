@@ -11,6 +11,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'kien/ctrlp.vim'
+Plugin 'qpkorr/vim-bufkill'
+Plugin 'fholgado/minibufexpl.vim'
 
 " theme
 Plugin 'andreasvc/vim-256noir'
