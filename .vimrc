@@ -42,6 +42,7 @@ set hidden
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
+map - :MBEToggle<cr>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -55,3 +56,6 @@ let g:syntastic_fsharp_checkers = []
 
 "  youcompleteme
 let g:ycm_autoclose_preview_window_after_completion=1
+
+" minibufexpl 
+let g:miniBufExplorerAutoStart = 0
