@@ -29,7 +29,7 @@ export EDITOR='vim'
 export ANDROID_NDK_DIR="/opt/android-ndk/"
 
 # add rust src dir
-export RUST_SRC_PATH=$HOME/Code/rust/src/
+export RUST_SRC_PATH=$HOME/.multirust/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src
 
 # cuda exports
 export CUDA_HOME=/usr/local/cuda

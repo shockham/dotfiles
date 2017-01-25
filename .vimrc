@@ -54,6 +54,11 @@ let g:syntastic_mode_map = {
     \ "passive_filetypes": ["haxe", "html", "fsharp"] }
 let g:syntastic_fsharp_checkers = []
 
+" rust
+let g:racer_cmd = "/path/to/racer/bin"
+let g:racer_experimental_completer = 1
+au FileType rust nmap gd <Plug>(rust-def)
+
 "  youcompleteme
 let g:ycm_autoclose_preview_window_after_completion=1
 
