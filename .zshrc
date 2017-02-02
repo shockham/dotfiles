@@ -26,6 +26,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR='vim'
 
 # some settings for android
+export ANDROID_HOME="/opt/android-sdk/"
 export ANDROID_NDK_DIR="/opt/android-ndk/"
 
 # add rust src dir
