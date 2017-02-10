@@ -13,6 +13,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'kien/ctrlp.vim'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'fholgado/minibufexpl.vim'
+Plugin 'tpope/vim-dispatch'
 
 " theme
 Plugin 'andreasvc/vim-256noir'
@@ -25,8 +26,8 @@ Plugin 'fsharp/vim-fsharp'
 call vundle#end()
 filetype plugin indent on
 
+" general settings
 set backspace=2
-syntax on
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -37,8 +38,18 @@ set mouse=a
 set autowrite
 set background=dark
 set t_Co=256
-colorscheme 256_noir
 set hidden
+set backupdir=~/.vim/backup//
+set dir=~/.vim/swap//
+set undodir=~/.vim/undo//
+set undofile
+set undolevels=1000
+set undoreload=10000
+set history=5000
+
+" syntax
+syntax on
+colorscheme 256_noir
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>

@@ -1,9 +1,10 @@
-http://www.theguardian.com/politics/rss
-http://www.independent.co.uk/news/uk/politics/rss
-http://www.theguardian.com/profile/owen-jones/rss
-http://leftfootforward.org/feed/
-https://www.jacobinmag.com/category/blogs/feed/
-http://novaramedia.com/feed/
-http://feeds.feedburner.com/TheCanary
-https://this-week-in-rust.org/rss.xml
-https://news.ycombinator.com/rss
+http://www.theguardian.com/politics/rss politics
+http://www.independent.co.uk/news/uk/politics/rss politics
+http://www.theguardian.com/profile/owen-jones/rss politics
+http://leftfootforward.org/feed/ politics
+https://www.jacobinmag.com/category/blogs/feed/ politics
+http://novaramedia.com/feed/ politics
+http://feeds.feedburner.com/TheCanary politics
+https://theintercept.com/feed/?lang=en politics
+https://this-week-in-rust.org/rss.xml tech
+https://news.ycombinator.com/rss tech
