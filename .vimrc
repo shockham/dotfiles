@@ -66,7 +66,7 @@ let g:syntastic_mode_map = {
 let g:syntastic_fsharp_checkers = []
 
 " rust
-let g:racer_cmd = "/path/to/racer/bin"
+let g:racer_cmd = "~/.cargo/bin/racer"
 let g:racer_experimental_completer = 1
 au FileType rust nmap gd <Plug>(rust-def)
 
