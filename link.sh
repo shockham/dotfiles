@@ -5,6 +5,7 @@ ln -sf $DOTFILE_PATH/.vimrc ~/.vimrc
 ln -sf $DOTFILE_PATH/.tmux.conf ~/.tmux.conf
 ln -sf $DOTFILE_PATH/.zshrc ~/.zshrc 
 ln -sf $DOTFILE_PATH/scripts ~/shk_scripts
+ln -sf $DOTFILE_PATH/.alacritty.yml ~/.alacritty.yml
 
 # newsbeuter
 mkdir -p ~/.newsbeuter
