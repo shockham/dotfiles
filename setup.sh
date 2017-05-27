@@ -4,6 +4,8 @@ platform="$(uname | tr '[:upper:]' '[:lower:]')"
 # install main tools
 if [[ $platform == 'darwin' ]]; then
     brew install tmux vim newsbeuter
+elif [[ $platform == 'linux' ]]; then
+    sudo apt-get install tmux vim newsbeuter
 fi
 
 # install oh-my-zsh, vundle and tpm
