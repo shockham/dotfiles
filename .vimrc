@@ -10,7 +10,6 @@ Plugin 'tpope/vim-sensible'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'kien/ctrlp.vim'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'tpope/vim-dispatch'
@@ -21,7 +20,6 @@ Plugin 'andreasvc/vim-256noir'
 " Language specific
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
-Plugin 'fsharp/vim-fsharp'
 
 call vundle#end()
 filetype plugin indent on
