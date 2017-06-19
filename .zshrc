@@ -38,4 +38,4 @@ export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
 export PATH="$CUDA_HOME/bin:$PATH"
 
 # emscripten
-source $HOME/Code/emsdk_portable/emsdk_env.sh >/dev/null
+# source $HOME/Code/emsdk_portable/emsdk_env.sh >/dev/null
