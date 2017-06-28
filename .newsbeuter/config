@@ -1,8 +1,8 @@
 # general
 max-items 100
 # colors
-color listnormal          color8 black
-color listnormal_unread   white  black  bold
-color listfocus           white  cyan   bold
-color listfocus_unread    white  cyan   bold
-color info                white  blue   bold
+color listnormal          color231  black
+color listnormal_unread   color231   black  bold
+color listfocus           color16  color231
+color listfocus_unread    color16  color231   bold
+color info                color16  color231   bold
