@@ -24,18 +24,3 @@ source $ZSH/oh-my-zsh.sh
 
 # default editor is vim
 export EDITOR='vim'
-
-# some settings for android
-export ANDROID_HOME="/opt/android-sdk/"
-export ANDROID_NDK_DIR="/opt/android-ndk/"
-
-# add rust src dir
-export RUST_SRC_PATH=$HOME/.multirust/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src
-
-# cuda exports
-export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
-export PATH="$CUDA_HOME/bin:$PATH"
-
-# emscripten
-# source $HOME/Code/emsdk_portable/emsdk_env.sh >/dev/null
