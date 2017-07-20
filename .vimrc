@@ -65,6 +65,7 @@ au FileType rust nmap gd <Plug>(rust-def)
 
 "  youcompleteme
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_rust_src_path = '~/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 
 " minibufexpl 
 let g:miniBufExplorerAutoStart = 0
