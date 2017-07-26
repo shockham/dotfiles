@@ -1,0 +1,11 @@
+MAX=`cat /sys/class/backlight/gmux_backlight/max_brightness | bc`
+CURRENT=`cat /sys/class/backlight/gmux_backlight/brightness | bc`
+
+CURRENT=$((CURRENT+10000))
+
+if [ $MAX -le $CURRENT ]
+then
+    CURRENT=$MAX
+fi
+
+tee /sys/class/backlight/gmux_backlight/brightness <<< $CURRENT

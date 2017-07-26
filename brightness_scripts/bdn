@@ -1,0 +1,12 @@
+
+CURRENT=`cat /sys/class/backlight/gmux_backlight/brightness | bc`
+MIN=0
+
+CURRENT=$((CURRENT-10000))
+
+if [ $CURRENT -le $MIN ]
+then
+    CURRENT=0
+fi
+
+tee /sys/class/backlight/gmux_backlight/brightness <<< $CURRENT
