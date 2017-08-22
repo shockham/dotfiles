@@ -48,11 +48,15 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 set history=5000
-set colorcolumn=100
 
 " syntax
 syntax on
 colorscheme 256_noir
+
+" colorcolumn
+set colorcolumn=100
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let &colorcolumn=join(range(100,999),",")
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
