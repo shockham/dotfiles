@@ -24,3 +24,8 @@ source $ZSH/oh-my-zsh.sh
 
 # default editor is vim
 export EDITOR='vim'
+
+# some settings for android
+export JAVA_HOME="/usr/lib/jvm/java-openjdk"
+export ANDROID_HOME="/opt/android-sdk/"
+export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools

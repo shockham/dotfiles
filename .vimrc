@@ -21,6 +21,10 @@ Plugin 'andreasvc/vim-256noir'
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
 
+" Language server
+Plugin 'prabirshrestha/async.vim'
+Plugin 'prabirshrestha/vim-lsp'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -44,6 +48,7 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 set history=5000
+set colorcolumn=100
 
 " syntax
 syntax on
@@ -62,6 +67,14 @@ let g:syntastic_check_on_wq = 0
 let g:racer_cmd = "racer"
 let g:racer_experimental_completer = 1
 au FileType rust nmap gd <Plug>(rust-def)
+" rls
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rustup', 'run', 'nightly', 'rls']},
+        \ 'whitelist': ['rust'],
+        \ })
+endif
 
 "  youcompleteme
 let g:ycm_autoclose_preview_window_after_completion=1
