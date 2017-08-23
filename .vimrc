@@ -25,6 +25,9 @@ Plugin 'racer-rust/vim-racer'
 Plugin 'prabirshrestha/async.vim'
 Plugin 'prabirshrestha/vim-lsp'
 
+" elm
+Plugin 'elmcast/elm-vim'
+
 call vundle#end()
 filetype plugin indent on
 
