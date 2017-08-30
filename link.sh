@@ -21,3 +21,7 @@ mkdir -p ~/.vim/undo
 vim +PluginInstall +qall
 # reload tmux conf
 tmux source ~/.tmux.conf
+
+# mpd
+mkdir -p ~/.config/mpd
+ln -sf $DOTFILE_PATH/mpd.conf ~/.config/mpd/mpd.conf
