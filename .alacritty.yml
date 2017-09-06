@@ -43,6 +43,15 @@ font:
 
 render_timer: false
 
+custom_cursor_colors: false
+
+background-opacity: 0.8
+
+live_config_reload: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>"
+
 visual_bell:
   animation: EaseOutExpo
   duration: 0
