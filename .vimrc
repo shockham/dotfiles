@@ -13,6 +13,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'tpope/vim-dispatch'
+Plugin 'jiangmiao/auto-pairs'
 
 " theme
 Plugin 'andreasvc/vim-256noir'
