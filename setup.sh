@@ -5,7 +5,12 @@ platform="$(uname | tr '[:upper:]' '[:lower:]')"
 if [[ $platform == 'darwin' ]]; then
     brew install tmux vim newsbeuter
 elif [[ $platform == 'linux' ]]; then
-    sudo apt-get install tmux vim newsbeuter
+    distro="$(lsb_release -i -s | tr '[:upper:]' '[:lower:]')"
+    if [[ $distro == 'fedora' ]]; then
+        sudo dnf install tmux vim newsbeuter
+    else
+        sudo apt-get install tmux vim newsbeuter
+    fi
 fi
 
 # install oh-my-zsh, vundle and tpm
