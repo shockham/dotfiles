@@ -88,8 +88,8 @@ if executable('rls')
         \ })
 endif
 
-
-
+" fsharp
+let g:fsharp_only_check_errors_on_write = 1
 
 "  youcompleteme
 let g:ycm_autoclose_preview_window_after_completion=1
