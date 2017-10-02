@@ -29,6 +29,9 @@ Plugin 'prabirshrestha/vim-lsp'
 " elm
 Plugin 'elmcast/elm-vim'
 
+" FSharp
+Plugin 'fsharp/vim-fsharp'
+
 call vundle#end()
 filetype plugin indent on
 
