@@ -29,7 +29,7 @@ font:
   italic:
     family: 'Fira Code'
 
-  size: 8.0
+  size: 9.0
 
   offset:
     x: -0.5
@@ -43,7 +43,7 @@ font:
 
 render_timer: false
 
-custom_cursor_colors: false
+custom_cursor_colors: true
 
 background-opacity: 0.8
 
