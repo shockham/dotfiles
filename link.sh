@@ -26,5 +26,8 @@ tmux source ~/.tmux.conf
 mkdir -p ~/.config/mpd
 ln -sf $DOTFILE_PATH/mpd.conf ~/.config/mpd/mpd.conf
 
-#i3
+# i3
 ln -sf $DOTFILE_PATH/i3 ~/.config/
+
+# irssi
+ln -sf $DOTFILE_PATH/.irssi ~
