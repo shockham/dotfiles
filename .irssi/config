@@ -5,6 +5,7 @@ servers = (
     port = "6697";
     use_tls = "yes";
     tls_verify = "yes";
+    autoconnect = "yes";
   }
 );
 
