@@ -12,8 +12,8 @@ padding:
   y: 2
 
 dpi:
-  x: 96.0
-  y: 96.0
+  x: 110.0
+  y: 110.0
 
 tabspaces: 8
 
@@ -29,7 +29,7 @@ font:
   italic:
     family: 'Fira Code'
 
-  size: 9.0
+  size: 8.0
 
   offset:
     x: -0.5
