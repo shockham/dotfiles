@@ -15,6 +15,7 @@ chatnets = {
     max_kicks = "1";
     max_msgs = "4";
     max_whois = "1";
+    autosendcmd = "/ignore -channels #rust,#rust-gamedev * JOINS PARTS QUITS NICKS";
   };
 };
 
@@ -281,6 +282,7 @@ settings = {
     real_name = "shockham";
     user_name = "shockham";
     nick = "shockham";
+    hostname = "void";
   };
   "fe-text" = { actlist_sort = "refnum"; };
   "fe-common/core" = { theme = "design"; };
