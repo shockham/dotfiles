@@ -1,39 +1,39 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin()
 
 " General
-Plugin 'gmarik/Vundle.vim'
-Plugin 'tpope/vim-sensible'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'scrooloose/syntastic'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'qpkorr/vim-bufkill'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'tpope/vim-dispatch'
-Plugin 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-sensible'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --rust-completer --cs-completer' }
+Plug 'scrooloose/syntastic'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'qpkorr/vim-bufkill'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'tpope/vim-dispatch'
+Plug 'jiangmiao/auto-pairs'
 
 " theme
-Plugin 'andreasvc/vim-256noir'
+Plug 'andreasvc/vim-256noir'
 
 " Language specific
-Plugin 'rust-lang/rust.vim'
-Plugin 'racer-rust/vim-racer'
+Plug 'rust-lang/rust.vim'
+Plug 'racer-rust/vim-racer'
 
 " Language server
-Plugin 'prabirshrestha/async.vim'
-Plugin 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
 
 " elm
-Plugin 'elmcast/elm-vim'
+Plug 'elmcast/elm-vim'
 
 " FSharp
-Plugin 'fsharp/vim-fsharp'
+Plug 'fsharp/vim-fsharp', {
+      \ 'for': 'fsharp',
+      \ 'do':  'make fsautocomplete',
+      \}
 
-call vundle#end()
-filetype plugin indent on
+call plug#end()
 
 " general settings
 set backspace=2
