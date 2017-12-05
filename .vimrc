@@ -11,7 +11,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
 Plug 'fholgado/minibufexpl.vim'
 Plug 'tpope/vim-dispatch'
-Plug 'jiangmiao/auto-pairs'
+Plug 'Raimondi/delimitMate'
 
 " theme
 Plug 'andreasvc/vim-256noir'
