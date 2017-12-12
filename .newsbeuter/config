@@ -1,5 +1,9 @@
 # general
 max-items 100
+refresh-on-startup yes
+auto-reload yes
+reload-time 15
+reload-threads 4
 # colors
 color listnormal          color231  black
 color listnormal_unread   color231   black  bold
