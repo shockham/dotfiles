@@ -9,8 +9,11 @@ ln -sf $DOTFILE_PATH/.alacritty.yml ~/.alacritty.yml
 
 # newsbeuter
 mkdir -p ~/.newsbeuter
+mkdir -p ~/.newsboat
 ln -sf $DOTFILE_PATH/.newsbeuter/urls ~/.newsbeuter/urls
 ln -sf $DOTFILE_PATH/.newsbeuter/config ~/.newsbeuter/config
+ln -sf $DOTFILE_PATH/.newsbeuter/urls ~/.newsboat/urls
+ln -sf $DOTFILE_PATH/.newsbeuter/config ~/.newsboat/config
 
 # make some directories for vim
 mkdir -p ~/.vim/backup
