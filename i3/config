@@ -123,6 +123,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+# i3lock
+bindsym $mod+p exec i3lock -u -c 111111
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -152,13 +154,13 @@ bindsym $mod+r mode "resize"
 
 # colors
 # class                 border  backgr. text    indicator child_border
-client.focused          #333333 #555555 #ffffff #ffffff   #000000
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #000000
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #333333 #cccccc #333333 #cccccc   #cccccc
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.focused          #111111 #111111 #cccccc #cccccc   #000000
+client.focused_inactive #5f676a #5f676a #cccccc #484e50   #000000
+client.unfocused        #111111 #111111 #444444 #292d2e   #111111
+client.urgent           #cccccc #cccccc #333333 #cccccc   #cccccc
+client.placeholder      #0c0c0c #0c0c0c #cccccc #000000   #0c0c0c
 
-client.background       #000000
+client.background       #111111
 
 # set the x11 root window bg
 exec --no-startup-id xsetroot -solid "#333333"
@@ -169,14 +171,14 @@ bar {
         position top
 
         colors {
-            background #000000
-            statusline #cccccc
-            separator #666666
+            background #111111
+            statusline #aaaaaa
+            separator #111111
 
-            focused_workspace  #666666 #444444 #cccccc
-            active_workspace   #333333 #666666 #cccccc
-            inactive_workspace #333333 #222222 #888888
-            urgent_workspace   #333333 #cccccc #333333
+            focused_workspace  #333333 #333333 #333333
+            active_workspace   #aaaaaa #aaaaaa #333333
+            inactive_workspace #111111 #111111 #111111
+            urgent_workspace   #eeeeee #eeeeee #eeeeee
         }
 
         status_command i3status -c ~/.config/i3/i3status.conf
