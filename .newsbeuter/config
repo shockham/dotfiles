@@ -4,6 +4,8 @@ refresh-on-startup yes
 auto-reload yes
 reload-time 15
 reload-threads 4
+show-read-feeds no
+browser "firefox %u"
 # colors
 color listnormal          color231  black
 color listnormal_unread   color231   black  bold
@@ -12,3 +14,12 @@ color listfocus_unread    color16  color231   bold
 color info                color16  color231   bold
 # tor
 proxy 127.0.0.1:9150
+# bindings
+bind-key j down feedlist
+bind-key k up feedlist
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key j down article
+bind-key k up article
