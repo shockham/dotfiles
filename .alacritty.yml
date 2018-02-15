@@ -3,17 +3,16 @@
 env:
   TERM: xterm-256color
 
-dimensions:
-  columns: 80
-  lines: 24
+window:
+  dimensions:
+    columns: 80
+    lines: 24
 
-padding:
-  x: 2
-  y: 2
+  padding:
+    x: 10
+    y: 10
 
-dpi:
-  x: 110.0
-  y: 110.0
+  decorations: false
 
 tabspaces: 8
 
@@ -29,7 +28,7 @@ font:
   italic:
     family: 'Fira Code'
 
-  size: 8.0
+  size: 8.5
 
   offset:
     x: 0.0
