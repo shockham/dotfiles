@@ -21,6 +21,7 @@ alias irssi='TERM=screen irssi'
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:$HOME/Library/Haskell/bin:/Developer/NVIDIA/CUDA-7.5/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
+source ~/.nix-profile/etc/profile.d/nix.sh
 
 # default editor is vim
 export EDITOR='vim'
