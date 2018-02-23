@@ -17,6 +17,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'andreasvc/vim-256noir'
 
 " Language specific
+
+" rust
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
@@ -32,6 +34,9 @@ Plug 'fsharp/vim-fsharp', {
       \ 'for': 'fsharp',
       \ 'do':  'make fsautocomplete',
       \}
+
+" glsl
+Plug 'tikhomirov/vim-glsl'
 
 call plug#end()
 
