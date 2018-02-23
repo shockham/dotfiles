@@ -16,6 +16,8 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 alias tmux='tmux -2'
 # alias so doesn't refresh on half of the window
 alias irssi='TERM=screen irssi'
+# clear push dirs on clear
+alias clear='clear && dirs -c'
 
 # adding to PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:$HOME/Library/Haskell/bin:/Developer/NVIDIA/CUDA-7.5/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
@@ -33,3 +35,5 @@ export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools
 
 # set keyboard to us
 setxkbmap -layout "us"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
