@@ -1,5 +1,5 @@
 # general
-max-items 100
+max-items 500
 refresh-on-startup yes
 auto-reload yes
 reload-time 15
