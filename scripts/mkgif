@@ -4,6 +4,8 @@ WIDTH=$2
 FRAMES_DIR=./"${VID##*/}"_frames
 echo $FRAMES_DIR
 mkdir $FRAMES_DIR
-ffmpeg -i $VID -vf scale=$WIDTH:-1:flags=lanczos,fps=20 $FRAMES_DIR/ffout%03d.png
-convert -loop 0 $FRAMES_DIR/ffout*.png $VID.gif
+# ffmpeg -i $VID -vf scale=$WIDTH:-1:flags=lanczos,fps=20 $FRAMES_DIR/ffout%03d.png
+# convert -loop 0 $FRAMES_DIR/ffout*.png $VID.gif
+ffmpeg -i $VID $FRAMES_DIR/ffout%03d.png
+gifski -o $VID.gif $FRAMES_DIR/ffout*.png
 rm -r $FRAMES_DIR
