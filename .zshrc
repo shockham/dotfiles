@@ -31,6 +31,7 @@ export EDITOR='vim'
 # some settings for android
 export JAVA_HOME="/usr/lib/jvm/java-openjdk"
 export ANDROID_HOME="/opt/android-sdk/"
+export NDK_HOME="/opt/android-ndk/"
 export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools
 
 # set keyboard to us
