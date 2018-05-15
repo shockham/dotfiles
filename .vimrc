@@ -9,7 +9,7 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --rust-completer --cs-compl
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
-Plug 'fholgado/minibufexpl.vim'
+Plug 'ap/vim-buftabline'
 Plug 'tpope/vim-dispatch'
 Plug 'Raimondi/delimitMate'
 
@@ -72,7 +72,6 @@ let &colorcolumn=join(range(100,999),",")
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
-map - :MBEToggle<cr>
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -102,9 +101,6 @@ let g:ycm_rust_src_path = '~/.multirust/toolchains/nightly-x86_64-unknown-linux-
 let g:ycm_semantic_triggers = {
      \ 'elm' : ['.'],
      \}
-
-" minibufexpl 
-let g:miniBufExplorerAutoStart = 0
 
 " markdown
 au FileType markdown set spell spelllang=en_gb
