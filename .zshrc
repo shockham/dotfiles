@@ -18,6 +18,8 @@ alias tmux='tmux -2'
 alias irssi='TERM=screen irssi'
 # clear push dirs on clear
 alias clear='clear && dirs -c'
+# cargo shortcut
+alias c='cargo'
 
 # adding to PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:$HOME/Library/Haskell/bin:/Developer/NVIDIA/CUDA-7.5/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
