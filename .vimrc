@@ -29,8 +29,10 @@ Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
 " Language server
-Plug 'prabirshrestha/async.vim'
-Plug 'prabirshrestha/vim-lsp'
+Plug 'autozimu/LanguageClient-neovim', {
+    \ 'branch': 'next',
+    \ 'do': 'bash install.sh',
+    \ }
 
 " elm
 Plug 'elmcast/elm-vim'
@@ -43,6 +45,9 @@ Plug 'fsharp/vim-fsharp', {
 
 " glsl
 Plug 'tikhomirov/vim-glsl'
+
+" reason
+Plug 'reasonml-editor/vim-reason-plus'
 
 call plug#end()
 
@@ -89,14 +94,13 @@ let g:elm_syntastic_show_warnings = 1
 let g:racer_cmd = "racer"
 let g:racer_experimental_completer = 1
 au FileType rust nmap gd <Plug>(rust-def)
-" rls
-if executable('rls')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'rls',
-        \ 'cmd': {server_info->['rustup', 'run', 'nightly', 'rls']},
-        \ 'whitelist': ['rust'],
-        \ })
-endif
+
+" language server
+let g:LanguageClient_serverCommands = {
+    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
+    \ 'reason': ['ocaml-language-server', '--stdio'],
+    \ 'ocaml': ['ocaml-language-server', '--stdio'],
+    \ }
 
 " fsharp
 let g:fsharp_only_check_errors_on_write = 1
