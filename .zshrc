@@ -2,7 +2,10 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-ZSH_THEME="lambda"
+ZSH_THEME="shockham"
+
+# Set location of custom dir
+ZSH_CUSTOM="~/.zsh_custom"
 
 # loaded plugins
 plugins=(git tmux pip)
