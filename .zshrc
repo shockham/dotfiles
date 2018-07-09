@@ -23,6 +23,7 @@ alias irssi='TERM=screen irssi'
 alias clear='clear && dirs -c'
 # cargo shortcut
 alias c='cargo'
+alias e='exa'
 
 
 source $ZSH/oh-my-zsh.sh
