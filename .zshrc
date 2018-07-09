@@ -24,8 +24,6 @@ alias clear='clear && dirs -c'
 # cargo shortcut
 alias c='cargo'
 
-# adding to PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:$HOME/Library/Haskell/bin:/Developer/NVIDIA/CUDA-7.5/bin:/usr/local/sbin:/usr/local/heroku/bin:$PATH"
 
 source $ZSH/oh-my-zsh.sh
 source ~/.nix-profile/etc/profile.d/nix.sh
@@ -37,9 +35,9 @@ export EDITOR='vim'
 export JAVA_HOME="/usr/lib/jvm/java-openjdk"
 export ANDROID_HOME="/opt/android-sdk/"
 export NDK_HOME="/opt/android-ndk/"
-export PATH=${PATH}:/opt/android-sdk/platform-tools:/opt/android-sdk/tools
 
 # set keyboard to us
 setxkbmap -layout "us"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# adding to PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$PATH"
