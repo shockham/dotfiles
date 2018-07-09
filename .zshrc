@@ -24,6 +24,7 @@ alias clear='clear && dirs -c'
 # cargo shortcut
 alias c='cargo'
 alias e='exa'
+alias b='bat'
 
 
 source $ZSH/oh-my-zsh.sh
