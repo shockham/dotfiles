@@ -24,6 +24,9 @@ Plug 'andreasvc/vim-256noir'
 
 " Language specific
 
+" python
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
+
 " rust
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
