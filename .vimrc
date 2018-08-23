@@ -101,8 +101,6 @@ au FileType rust nmap gd <Plug>(rust-def)
 " language server
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ 'reason': ['ocaml-language-server', '--stdio'],
-    \ 'ocaml': ['ocaml-language-server', '--stdio'],
     \ }
 
 " fsharp
