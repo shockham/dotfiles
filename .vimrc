@@ -25,7 +25,6 @@ Plug 'andreasvc/vim-256noir'
 " Language specific
 
 " python
-Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
 " rust
 Plug 'rust-lang/rust.vim'
@@ -48,9 +47,6 @@ Plug 'fsharp/vim-fsharp', {
 
 " glsl
 Plug 'tikhomirov/vim-glsl'
-
-" reason
-Plug 'reasonml-editor/vim-reason-plus'
 
 call plug#end()
 
