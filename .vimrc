@@ -25,6 +25,7 @@ Plug 'andreasvc/vim-256noir'
 " Language specific
 
 " python
+Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
 " rust
 Plug 'rust-lang/rust.vim'
@@ -83,8 +84,9 @@ let &colorcolumn=join(range(100,999),",")
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
 
+" syntastic
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:elm_syntastic_show_warnings = 1
@@ -111,3 +113,7 @@ let g:ycm_semantic_triggers = {
 
 " markdown
 au FileType markdown set spell spelllang=en_gb
+
+" pymode
+let g:pymode_options_colorcolumn = 0
+let g:pymode_options = 0
