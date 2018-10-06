@@ -49,6 +49,9 @@ Plug 'fsharp/vim-fsharp', {
 " glsl
 Plug 'tikhomirov/vim-glsl'
 
+" sql
+Plug 'joereynolds/SQHell.vim'
+
 call plug#end()
 
 " general settings
@@ -90,6 +93,7 @@ let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:elm_syntastic_show_warnings = 1
+let g:syntastic_javascript_checkers = ['eslint']
 
 " rust
 let g:racer_cmd = "racer"
@@ -117,3 +121,7 @@ au FileType markdown set spell spelllang=en_gb
 " pymode
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options = 0
+let g:pymode_lint_cwindow = 0
+
+" sql
+so ~/.db_connections.vim
