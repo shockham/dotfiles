@@ -10,7 +10,9 @@ endif
 call plug#begin()
 
 " General
-Plug 'tpope/vim-sensible'
+if !has('nvim')
+    Plug 'tpope/vim-sensible'
+endif
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --rust-completer --cs-completer' }
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
@@ -74,6 +76,7 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 set history=5000
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " syntax
 syntax on
