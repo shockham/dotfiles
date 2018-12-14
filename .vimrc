@@ -13,13 +13,14 @@ call plug#begin()
 if !has('nvim')
     Plug 'tpope/vim-sensible'
 endif
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --rust-completer --cs-completer' }
+Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --rust-completer --cs-completer' }
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
 Plug 'ap/vim-buftabline'
 Plug 'tpope/vim-dispatch'
 Plug 'Raimondi/delimitMate'
+Plug 'ctrlpvim/ctrlp.vim'
 
 " theme
 Plug 'andreasvc/vim-256noir'
@@ -89,6 +90,7 @@ let &colorcolumn=join(range(100,999),",")
 
 " Keybindings
 nmap <silent> <C-c> :%s/\s\+$//<cr>
+map! jj <Esc>
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
