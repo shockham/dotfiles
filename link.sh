@@ -39,3 +39,6 @@ ln -sf $DOTFILE_PATH/.irssi ~
 
 # create file for SQHELL conns
 touch ~/.db_connections.vim
+
+# cmus themes
+ln -sf $DOTFILE_PATH/.cmus ~
