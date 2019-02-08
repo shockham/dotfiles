@@ -55,6 +55,9 @@ Plug 'tikhomirov/vim-glsl'
 " sql
 Plug 'joereynolds/SQHell.vim'
 
+" graphql
+Plug 'jparise/vim-graphql'
+
 call plug#end()
 
 " general settings
@@ -89,7 +92,7 @@ highlight ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn=join(range(100,999),",")
 
 " Keybindings
-nmap <silent> <C-c> :%s/\s\+$//<cr>
+nmap <silent> <C-c>c :%s/\s\+$//<cr>
 map! jj <Esc>
 
 " syntastic
@@ -127,6 +130,10 @@ au FileType markdown set spell spelllang=en_gb
 let g:pymode_options_colorcolumn = 0
 let g:pymode_options = 0
 let g:pymode_lint_cwindow = 0
+let g:pymode_rope_goto_definition_bind = 'gd'
 
 " sql
 so ~/.db_connections.vim
+
+" show buffer numbers
+let g:buftabline_numbers = 1
