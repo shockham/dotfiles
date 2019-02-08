@@ -8,7 +8,7 @@ ZSH_THEME="shockham"
 ZSH_CUSTOM="$HOME/.zsh_custom"
 
 # loaded plugins
-plugins=(git tmux pip cargo python pylint docker docker-compose)
+plugins=(git tmux pip cargo python pylint docker docker-compose zsh-autosuggestions yarn)
 
 # User configuration
 
@@ -25,6 +25,7 @@ alias clear='clear && dirs -c'
 alias c='cargo'
 alias e='exa'
 alias b='bat'
+alias cl='clear'
 
 
 source $ZSH/oh-my-zsh.sh
