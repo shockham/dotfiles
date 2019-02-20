@@ -58,6 +58,9 @@ Plug 'joereynolds/SQHell.vim'
 " graphql
 Plug 'jparise/vim-graphql'
 
+" dart
+Plug 'dart-lang/dart-vim-plugin'
+
 call plug#end()
 
 " general settings
