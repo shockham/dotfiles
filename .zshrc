@@ -15,17 +15,16 @@ plugins=(git tmux pip cargo python pylint docker docker-compose zsh-autosuggesti
 # additional completions
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-# alias tmux so that it opens with 256 colours
+# alias'
 alias tmux='tmux -2'
-# alias so doesn't refresh on half of the window
 alias irssi='TERM=screen irssi'
-# clear push dirs on clear
 alias clear='clear && dirs -c'
-# cargo shortcut
 alias c='cargo'
 alias e='exa'
 alias b='bat'
 alias cl='clear'
+alias dc='docker-compose'
+alias dps='docker ps'
 
 
 source $ZSH/oh-my-zsh.sh
@@ -43,4 +42,4 @@ export NDK_HOME="/opt/android-ndk/"
 setxkbmap -layout "us"
 
 # adding to PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$HOME/Code/other/flutter/bin:$PATH"
