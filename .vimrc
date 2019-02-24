@@ -85,6 +85,9 @@ set undoreload=10000
 set history=5000
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
+" lang specfic format settings
+autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
 " syntax
 syntax on
 colorscheme 256_noir
