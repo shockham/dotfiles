@@ -25,6 +25,7 @@ alias b='bat'
 alias cl='clear'
 alias dc='docker-compose'
 alias dps='docker ps'
+alias dk='docker'
 
 
 source $ZSH/oh-my-zsh.sh
