@@ -61,6 +61,9 @@ Plug 'jparise/vim-graphql'
 " dart
 Plug 'dart-lang/dart-vim-plugin'
 
+" vue
+Plug 'posva/vim-vue'
+
 call plug#end()
 
 " general settings
@@ -87,6 +90,7 @@ set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 
 " lang specfic format settings
 autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype vue setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " syntax
 syntax on
