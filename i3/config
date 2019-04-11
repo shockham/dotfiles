@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 # Key map stuff
-exec setxkbmap -layout gb, us
+exec setxkbmap -layout us, gb
 exec setxkbmap -option 'grp:ctrl_alt_toggle'
 
 set $mod Mod4
