@@ -21,6 +21,7 @@ Plug 'ap/vim-buftabline'
 Plug 'tpope/vim-dispatch'
 Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 
 " theme
 Plug 'andreasvc/vim-256noir'
