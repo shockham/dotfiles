@@ -13,7 +13,6 @@ call plug#begin()
 if !has('nvim')
     Plug 'tpope/vim-sensible'
 endif
-Plug 'Valloric/YouCompleteMe', { 'do': 'python3 install.py --rust-completer --cs-completer' }
 Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
@@ -21,7 +20,8 @@ Plug 'ap/vim-buftabline'
 Plug 'tpope/vim-dispatch'
 Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
+Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
+Plug 'ludovicchabant/vim-gutentags'
 
 " theme
 Plug 'andreasvc/vim-256noir'
@@ -30,16 +30,11 @@ Plug 'andreasvc/vim-256noir'
 
 " python
 Plug 'python-mode/python-mode', { 'branch': 'develop' }
+Plug 'python-rope/ropevim'
 
 " rust
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
-
-" Language server
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
 
 " elm
 Plug 'elmcast/elm-vim'
@@ -64,6 +59,9 @@ Plug 'dart-lang/dart-vim-plugin'
 
 " vue
 Plug 'posva/vim-vue'
+
+" svelte
+Plug 'burner/vim-svelte'
 
 call plug#end()
 
@@ -94,6 +92,8 @@ set nomodeline
 " lang specfic format settings
 autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype vue setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " syntax
 syntax on
