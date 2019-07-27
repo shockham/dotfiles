@@ -1,2 +1,3 @@
 scripts/scripts
 .DS_Store
+.zsh_custom/plugins
