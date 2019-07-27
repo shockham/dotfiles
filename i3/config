@@ -178,19 +178,19 @@ workspace_layout tabbed
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        position top
-
-        colors {
-            background #000000
-            statusline #aaaaaa
-            separator #000000
-
-            focused_workspace  #333333 #333333 #333333
-            active_workspace   #aaaaaa #aaaaaa #333333
-            inactive_workspace #000000 #000000 #000000
-            urgent_workspace   #eeeeee #eeeeee #eeeeee
-        }
-
-        status_command i3status -c ~/.config/i3/i3status.conf
-}
+# bar {
+#         position top
+# 
+#         colors {
+#             background #000000
+#             statusline #aaaaaa
+#             separator #000000
+# 
+#             focused_workspace  #333333 #333333 #333333
+#             active_workspace   #aaaaaa #aaaaaa #333333
+#             inactive_workspace #000000 #000000 #000000
+#             urgent_workspace   #eeeeee #eeeeee #eeeeee
+#         }
+# 
+#         status_command i3status -c ~/.config/i3/i3status.conf
+# }
