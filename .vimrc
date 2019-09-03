@@ -22,6 +22,8 @@ Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
 Plug 'ludovicchabant/vim-gutentags'
+Plug 'jceb/vim-orgmode'
+Plug 'severin-lemaignan/vim-minimap'
 
 " theme
 Plug 'andreasvc/vim-256noir'
@@ -29,8 +31,7 @@ Plug 'andreasvc/vim-256noir'
 " Language specific
 
 " python
-Plug 'python-mode/python-mode', { 'branch': 'develop' }
-Plug 'python-rope/ropevim'
+" Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
 " rust
 Plug 'rust-lang/rust.vim'
@@ -85,7 +86,7 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 set history=5000
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
+set statusline=%<%f\ %h%m%r%=%{coc#status()}\ %-14.(%l,%c%V%)\ %P
 set modelines=0
 set nomodeline
 
@@ -101,8 +102,10 @@ colorscheme 256_noir
 
 " colorcolumn
 set colorcolumn=100
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
+hi ColorColumn ctermbg=235 guibg=#2c2d27
 let &colorcolumn=join(range(100,999),",")
+hi clear VertSplit
+hi! VertSplit ctermbg=235 ctermfg=235
 
 " Keybindings
 nmap <silent> <C-c>c :%s/\s\+$//<cr>
