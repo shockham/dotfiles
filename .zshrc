@@ -35,8 +35,8 @@ source ~/.nix-profile/etc/profile.d/nix.sh
 export EDITOR='vim'
 
 # some settings for android
-export JAVA_HOME="/usr/lib/jvm/java-openjdk"
-export ANDROID_HOME="/opt/android-sdk/"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
+export ANDROID_HOME="/usr/lib/android-sdk/"
 export NDK_HOME="/opt/android-ndk/"
 
 # set keyboard to us
