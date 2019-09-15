@@ -36,11 +36,11 @@ export EDITOR='vim'
 
 # some settings for android
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-export ANDROID_HOME="/usr/lib/android-sdk/"
-export NDK_HOME="/opt/android-ndk/"
+export ANDROID_HOME="/home/android-sdk/"
+# export NDK_HOME="/opt/android-ndk/"
 
 # set keyboard to us
 setxkbmap -layout "us"
 
 # adding to PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:/opt/android-sdk/platform-tools:/opt/android-sdk/tools:$HOME/Code/other/flutter/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$HOME/Code/other/flutter/bin:$PATH"
