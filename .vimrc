@@ -57,6 +57,7 @@ Plug 'jparise/vim-graphql'
 
 " dart
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'thosakwe/vim-flutter'
 
 " vue
 Plug 'posva/vim-vue'
