@@ -30,9 +30,6 @@ Plug 'andreasvc/vim-256noir'
 
 " Language specific
 
-" python
-" Plug 'python-mode/python-mode', { 'branch': 'develop' }
-
 " rust
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
@@ -133,21 +130,8 @@ let g:LanguageClient_serverCommands = {
 " fsharp
 let g:fsharp_only_check_errors_on_write = 1
 
-"  youcompleteme
-let g:ycm_autoclose_preview_window_after_completion=1
-let g:ycm_rust_src_path = '~/.multirust/toolchains/nightly-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
-let g:ycm_semantic_triggers = {
-     \ 'elm' : ['.'],
-     \}
-
 " markdown
 au FileType markdown set spell spelllang=en_gb
-
-" pymode
-let g:pymode_options_colorcolumn = 0
-let g:pymode_options = 0
-let g:pymode_lint_cwindow = 0
-let g:pymode_rope_goto_definition_bind = 'gd'
 
 " sql
 so ~/.db_connections.vim
