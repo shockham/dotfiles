@@ -34,6 +34,9 @@ ln -sf $DOTFILE_PATH/mpd.conf ~/.config/mpd/mpd.conf
 # i3
 ln -sf $DOTFILE_PATH/i3 ~/.config/
 
+# sway
+ln -sf $DOTFILE_PATH/sway ~/.config/
+
 # irssi
 ln -sf $DOTFILE_PATH/.irssi ~
 
