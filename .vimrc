@@ -24,6 +24,9 @@ Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'jceb/vim-orgmode'
 Plug 'severin-lemaignan/vim-minimap'
+Plug 'junegunn/goyo.vim'
+Plug 'liuchengxu/vim-clap', { 'do': function('clap#helper#build_all') }
+Plug 'benmills/vimux'
 
 " theme
 Plug 'andreasvc/vim-256noir'
