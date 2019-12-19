@@ -65,6 +65,10 @@ Plug 'posva/vim-vue'
 " svelte
 Plug 'burner/vim-svelte'
 
+" TidalCycles/supercollider
+Plug 'supercollider/scvim'
+Plug 'tidalcycles/vim-tidal'
+
 call plug#end()
 
 " general settings
@@ -141,3 +145,7 @@ so ~/.db_connections.vim
 
 " show buffer numbers
 let g:buftabline_numbers = 1
+
+" tidal config
+" let g:tidal_default_config = {"socket_name": "default", "target_pane": "net:2:3"}
+let g:tidal_target = "terminal"
