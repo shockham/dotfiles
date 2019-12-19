@@ -37,6 +37,9 @@ ln -sf $DOTFILE_PATH/i3 ~/.config/
 # sway
 ln -sf $DOTFILE_PATH/sway ~/.config/
 
+# rofi
+ln -sf $DOTFILE_PATH/rofi ~/.config/
+
 # irssi
 ln -sf $DOTFILE_PATH/.irssi ~
 
