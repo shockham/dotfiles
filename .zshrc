@@ -26,6 +26,7 @@ alias cl='clear'
 alias dc='docker-compose'
 alias dps='docker ps'
 alias dk='docker'
+alias am='alsamixer -g'
 
 
 source $ZSH/oh-my-zsh.sh
