@@ -115,6 +115,7 @@ hi! VertSplit ctermbg=235 ctermfg=235
 " Keybindings
 nmap <silent> <C-c>c :%s/\s\+$//<cr>
 map! jj <Esc>
+tnoremap <Esc> <C-\><C-n>
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
