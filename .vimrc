@@ -13,7 +13,7 @@ call plug#begin()
 if !has('nvim')
     Plug 'tpope/vim-sensible'
 endif
-Plug 'scrooloose/syntastic'
+" Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
 Plug 'ap/vim-buftabline'
@@ -27,6 +27,7 @@ Plug 'severin-lemaignan/vim-minimap'
 Plug 'junegunn/goyo.vim'
 Plug 'liuchengxu/vim-clap', { 'do': function('clap#helper#build_all') }
 Plug 'benmills/vimux'
+Plug 'editorconfig/editorconfig-vim'
 
 " theme
 Plug 'andreasvc/vim-256noir'
@@ -61,6 +62,9 @@ Plug 'thosakwe/vim-flutter'
 
 " vue
 Plug 'posva/vim-vue'
+
+" typescript
+Plug 'leafgarland/typescript-vim'
 
 " svelte
 Plug 'burner/vim-svelte'
