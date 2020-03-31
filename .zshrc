@@ -8,12 +8,12 @@ ZSH_THEME="shockham"
 ZSH_CUSTOM="$HOME/.zsh_custom"
 
 # loaded plugins
-plugins=(git tmux pip cargo python pylint docker docker-compose zsh-autosuggestions yarn)
+plugins=(git tmux pip cargo python pylint docker docker-compose zsh-autosuggestions yarn ripgrep)
 
 # User configuration
 
 # additional completions
-fpath=(/usr/local/share/zsh-completions $fpath)
+#fpath=(/usr/local/share/zsh-completions $fpath)
 
 # alias'
 alias tmux='tmux -2'
@@ -23,9 +23,14 @@ alias c='cargo'
 alias e='exa --color=never'
 alias b='bat'
 alias cl='clear'
+
 alias dc='docker-compose'
+alias dcu='dc up -d'
+alias dcl='dc logs'
+alias dcr='dc run'
 alias dps='docker ps'
 alias dk='docker'
+
 alias am='alsamixer -g'
 
 

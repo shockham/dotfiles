@@ -6,8 +6,6 @@ env:
 window:
   decorations: none
 
-tabspaces: 8
-
 draw_bold_text_with_bright_colors: true
 
 font:
@@ -32,11 +30,38 @@ font:
 
   use_thin_strokes: true
 
-render_timer: false
-
 background-opacity: 0.8
 
 live_config_reload: true
+
+# Colors (Tomorrow Night Bright)
+colors:
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#eaeaea'
+
+  # Normal colors
+  normal:
+    black:   '#000000'
+    red:     '#d54e53'
+    green:   '#bfbfbf'
+    yellow:  '#cecece'
+    blue:    '#8e8e8e'
+    magenta: '#828282'
+    cyan:    '#6d6d6d'
+    white:   '#eaeaea'
+
+  # Bright colors
+  bright:
+    black:   '#666666'
+    red:     '#ff3334'
+    green:   '#e5e5e5'
+    yellow:  '#dddddd'
+    blue:    '#a0a0a0'
+    magenta: '#939393'
+    cyan:    '#7a7a7a'
+    white:   '#ffffff'
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
