@@ -69,6 +69,9 @@ Plug 'leafgarland/typescript-vim'
 " svelte
 Plug 'burner/vim-svelte'
 
+" gleam
+Plug 'gleam-lang/gleam.vim'
+
 " TidalCycles/supercollider
 Plug 'supercollider/scvim'
 Plug 'tidalcycles/vim-tidal'
