@@ -24,12 +24,19 @@ alias e='exa --color=never'
 alias b='bat'
 alias cl='clear'
 
+alias dk='docker'
+alias dps='dk ps'
+
 alias dc='docker-compose'
 alias dcu='dc up -d'
 alias dcl='dc logs'
 alias dcr='dc run'
-alias dps='docker ps'
-alias dk='docker'
+alias dcd='dc down'
+
+alias kpl='keepassxc-cli ls $KPXC_DB /'
+alias kpg='keepassxc-cli show -a UserName -a Password $KPXC_DB'
+
+alias work='pushd ~/Code/work'
 
 alias am='alsamixer -g'
 
@@ -48,5 +55,8 @@ export ANDROID_HOME="/home/android-sdk/"
 # set keyboard to us
 setxkbmap -layout "us"
 
+# rust build caching
+export RUSTC_WRAPPER=sccache
+
 # adding to PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$HOME/Code/other/flutter/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$HOME/Code/other/flutter/bin:${HOME}/.krew/bin:$PATH"
