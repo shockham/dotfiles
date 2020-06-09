@@ -94,6 +94,9 @@ bindsym $mod+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut.
 bindsym $mod+p exec swaylock -u -c 000000
 # remove border
 bindsym $mod+b border toggle
+# screen shots
+bindsym $mod+c exec grim
+
 
 
 # resize window (you can also use the mouse for that)
