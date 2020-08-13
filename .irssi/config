@@ -1,7 +1,7 @@
 servers = (
   {
-    address = "irc.mozilla.org";
-    chatnet = "Mozilla";
+    address = "chat.freenode.net";
+    chatnet = "Freenode";
     port = "6697";
     use_tls = "yes";
     tls_verify = "yes";
@@ -10,7 +10,7 @@ servers = (
 );
 
 chatnets = {
-  Mozilla = {
+  Freenode = {
     type = "IRC";
     max_kicks = "1";
     max_msgs = "4";
@@ -19,8 +19,7 @@ chatnets = {
 };
 
 channels = (
-  { name = "#rust"; chatnet = "Mozilla"; autojoin = "Yes"; },
-  { name = "#rust-gamedev"; chatnet = "Mozilla"; autojoin = "Yes"; }
+  { name = "#merveilles"; chatnet = "Freenode"; autojoin = "Yes"; }
 );
 
 aliases = {
