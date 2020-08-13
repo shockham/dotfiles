@@ -13,20 +13,14 @@ call plug#begin()
 if !has('nvim')
     Plug 'tpope/vim-sensible'
 endif
-" Plug 'scrooloose/syntastic'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
 Plug 'ap/vim-buftabline'
-Plug 'tpope/vim-dispatch'
 Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'jceb/vim-orgmode'
-Plug 'severin-lemaignan/vim-minimap'
-Plug 'junegunn/goyo.vim'
 Plug 'liuchengxu/vim-clap', { 'do': function('clap#helper#build_all') }
-Plug 'benmills/vimux'
 Plug 'editorconfig/editorconfig-vim'
 
 " theme
@@ -41,12 +35,6 @@ Plug 'racer-rust/vim-racer'
 " elm
 Plug 'elmcast/elm-vim'
 
-" FSharp
-Plug 'fsharp/vim-fsharp', {
-      \ 'for': 'fsharp',
-      \ 'do':  'make fsautocomplete',
-      \}
-
 " glsl
 Plug 'tikhomirov/vim-glsl'
 
@@ -55,10 +43,6 @@ Plug 'joereynolds/SQHell.vim'
 
 " graphql
 Plug 'jparise/vim-graphql'
-
-" dart
-Plug 'dart-lang/dart-vim-plugin'
-Plug 'thosakwe/vim-flutter'
 
 " vue
 Plug 'posva/vim-vue'
