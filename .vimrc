@@ -20,7 +20,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
 Plug 'ludovicchabant/vim-gutentags'
-Plug 'liuchengxu/vim-clap', { 'do': function('clap#helper#build_all') }
 Plug 'editorconfig/editorconfig-vim'
 
 " theme
