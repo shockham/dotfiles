@@ -5,7 +5,7 @@ auto-reload yes
 reload-time 15
 reload-threads 4
 # show-read-feeds no
-browser "firefox %u"
+browser "qutebrowser %u"
 # colors
 color listnormal          color231  black
 color listnormal_unread   color231   black  bold

@@ -98,29 +98,28 @@ bindsym $mod+b border toggle
 bindsym $mod+c exec grim
 
 
-
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym k resize grow height 10 px or 10 ppt
+    bindsym l resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -135,18 +134,26 @@ client.placeholder      #0c0c0c #0c0c0c #cccccc #000000   #0c0c0c
 
 client.background       #000000
 
-# set the x11 root window bg
-# exec --no-startup-id xsetroot -solid "#333333"
+# wallpaper
+output "*" bg /home/sam/Pictures/insp/tumblr_nx8b5xpXRG1uw1422o1_1280.jpg fill
+output "*" scale 1
 
 # workspace style
 workspace_layout tabbed
 default_border pixel
 hide_edge_borders --i3 smart
 
+#bar {
+#    position top
+#    mode overlay
+#    workspace_buttons no
+#}
+
 # touchpad input
 input "1739:0:Synaptics_TM3288-011" {
     tap enabled
-    accel_profile flat
+    # accel_profile flat
+    pointer_accel 1
 }
 
 # keyboard input
