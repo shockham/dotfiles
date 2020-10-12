@@ -59,6 +59,9 @@ Plug 'gleam-lang/gleam.vim'
 Plug 'supercollider/scvim'
 Plug 'tidalcycles/vim-tidal'
 
+" Elixer
+Plug 'elixir-editors/vim-elixir'
+
 call plug#end()
 
 " general settings
