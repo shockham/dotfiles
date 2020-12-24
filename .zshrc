@@ -63,7 +63,7 @@ export PATH="$PATH:$HOME/shk_scripts:$HOME/.cargo/bin"
 # android
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin"
 # krew
-export PATH="$PATH:${HOME}/.krew/bin:$PATH"
+export PATH="$PATH:$HOME/.krew/bin"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
