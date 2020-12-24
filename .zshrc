@@ -42,15 +42,14 @@ alias am='alsamixer -g'
 
 
 source $ZSH/oh-my-zsh.sh
-source ~/.nix-profile/etc/profile.d/nix.sh
 
 # default editor is vim
 export EDITOR='vim'
 
 # some settings for android
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-export ANDROID_HOME="/home/android-sdk/"
-# export NDK_HOME="/opt/android-ndk/"
+export ANDROID_SDK_ROOT="/home/android-sdk/"
+export ANDROID_NDK_ROOT="/home/android-ndk/"
 
 # set keyboard to us
 setxkbmap -layout "us"
@@ -59,7 +58,12 @@ setxkbmap -layout "us"
 export RUSTC_WRAPPER=sccache
 
 # adding to PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/shk_scripts:$HOME/.cargo/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$HOME/Code/other/flutter/bin:${HOME}/.krew/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.local/bin"
+export PATH="$PATH:$HOME/shk_scripts:$HOME/.cargo/bin"
+# android
+export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin"
+# krew
+export PATH="$PATH:${HOME}/.krew/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
