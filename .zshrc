@@ -57,9 +57,10 @@ setxkbmap -layout "us"
 # rust build caching
 export RUSTC_WRAPPER=sccache
 
-# adding to PATH
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$HOME/.local/bin"
-export PATH="$PATH:$HOME/shk_scripts:$HOME/.cargo/bin"
+# base PATH
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/games"
+# home
+export PATH="$PATH:$HOME/.local/bin:$HOME/shk_scripts:$HOME/.cargo/bin"
 # android
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin"
 # krew
