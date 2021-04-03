@@ -110,6 +110,10 @@ hi! VertSplit ctermbg=235 ctermfg=235
 nmap <silent> <C-c>c :%s/\s\+$//<cr>
 map! jj <Esc>
 tnoremap <Esc> <C-\><C-n>
+noremap <C-w>+ :resize +5<CR>
+noremap <C-w>- :resize -5<CR>
+noremap <C-w>< :vertical:resize -5<CR>
+noremap <C-w>> :vertical:resize +5<CR>
 
 " syntastic
 let g:syntastic_always_populate_loc_list = 1
