@@ -30,7 +30,7 @@ alias dps='dk ps'
 alias dc='docker-compose'
 alias dcu='dc up -d'
 alias dcl='dc logs'
-alias dcr='dc run'
+alias dcr='dc run --rm'
 alias dcd='dc down'
 
 alias kpl='keepassxc-cli ls $KPXC_DB /'
@@ -65,6 +65,9 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/shk_scripts:$HOME/.cargo/bin"
 export PATH="$PATH:$ANDROID_SDK_ROOT/platform-tools:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin"
 # krew
 export PATH="$PATH:$HOME/.krew/bin"
+# deno
+export DENO_INSTALL="/home/sam/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform
