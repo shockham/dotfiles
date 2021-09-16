@@ -1,8 +1,8 @@
 # general
 max-items 500
 refresh-on-startup yes
-auto-reload yes
-reload-time 15
+# auto-reload yes
+# reload-time 15
 reload-threads 4
 # show-read-feeds no
 browser "qutebrowser %u"
@@ -13,7 +13,7 @@ color listfocus           color16  color231
 color listfocus_unread    color16  color231   bold
 color info                color16  color231   bold
 # tor
-proxy 127.0.0.1:9150
+# proxy 127.0.0.1:9150
 # bindings
 bind-key j down feedlist
 bind-key k up feedlist
