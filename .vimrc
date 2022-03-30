@@ -15,11 +15,10 @@ if !has('nvim')
 endif
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
-Plug 'ap/vim-buftabline'
+" Plug 'ap/vim-buftabline'
 Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'neoclide/coc.nvim', { 'do': { -> coc#util#install() } }
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 
 " theme
@@ -31,9 +30,6 @@ Plug 'andreasvc/vim-256noir'
 Plug 'rust-lang/rust.vim'
 Plug 'racer-rust/vim-racer'
 
-" elm
-Plug 'elmcast/elm-vim'
-
 " glsl
 Plug 'tikhomirov/vim-glsl'
 
@@ -43,24 +39,8 @@ Plug 'joereynolds/SQHell.vim'
 " graphql
 Plug 'jparise/vim-graphql'
 
-" vue
-Plug 'posva/vim-vue'
-
 " typescript
 Plug 'leafgarland/typescript-vim'
-
-" svelte
-Plug 'burner/vim-svelte'
-
-" gleam
-Plug 'gleam-lang/gleam.vim'
-
-" TidalCycles/supercollider
-Plug 'supercollider/scvim'
-Plug 'tidalcycles/vim-tidal'
-
-" Elixer
-Plug 'elixir-editors/vim-elixir'
 
 call plug#end()
 
@@ -115,14 +95,6 @@ noremap <C-w>- :resize -5<CR>
 noremap <C-w>< :vertical:resize -5<CR>
 noremap <C-w>> :vertical:resize +5<CR>
 
-" syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:elm_syntastic_show_warnings = 1
-let g:syntastic_javascript_checkers = ['eslint']
-
 " rust
 let g:racer_cmd = "racer"
 let g:racer_experimental_completer = 1
@@ -133,18 +105,11 @@ let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
     \ }
 
-" fsharp
-let g:fsharp_only_check_errors_on_write = 1
-
 " markdown
 au FileType markdown set spell spelllang=en_gb
 
 " sql
 so ~/.db_connections.vim
 
-" show buffer numbers
-let g:buftabline_numbers = 1
-
-" tidal config
-" let g:tidal_default_config = {"socket_name": "default", "target_pane": "net:2:3"}
-let g:tidal_target = "terminal"
+" python
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
