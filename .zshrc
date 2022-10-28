@@ -19,7 +19,7 @@ plugins=(git tmux pip cargo python pylint docker docker-compose zsh-autosuggesti
 alias tmux='tmux -2'
 alias irssi='TERM=screen irssi'
 alias clear='clear && dirs -c'
-alias c='cargo'
+alias c='mold -run cargo'
 alias e='exa --color=never'
 alias b='bat'
 alias cl='clear'
@@ -32,6 +32,8 @@ alias dcu='dc up -d'
 alias dcl='dc logs'
 alias dcr='dc run --rm'
 alias dcd='dc down'
+
+alias gpo='git push origin HEAD'
 
 alias kpl='keepassxc-cli ls $KPXC_DB /'
 alias kpg='keepassxc-cli show -a UserName -a Password $KPXC_DB'
@@ -51,9 +53,6 @@ export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export ANDROID_SDK_ROOT="/home/android-sdk/"
 export ANDROID_NDK_ROOT="/home/android-ndk/"
 
-# set keyboard to us
-setxkbmap -layout "us"
-
 # rust build caching
 export RUSTC_WRAPPER=sccache
 
@@ -68,6 +67,8 @@ export PATH="$PATH:$HOME/.krew/bin"
 # deno
 export DENO_INSTALL="/home/sam/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
+# go
+export PATH="$PATH:$HOME/go/bin"
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/local/bin/terraform terraform

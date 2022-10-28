@@ -15,7 +15,6 @@ if !has('nvim')
 endif
 Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
-" Plug 'ap/vim-buftabline'
 Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -41,6 +40,12 @@ Plug 'jparise/vim-graphql'
 
 " typescript
 Plug 'leafgarland/typescript-vim'
+
+" tidalcycles
+Plug 'tidalcycles/vim-tidal'
+
+" hare
+Plug 'https://git.sr.ht/~sircmpwn/hare.vim'
 
 call plug#end()
 
@@ -68,6 +73,8 @@ set statusline=%<%f\ %h%m%r%=%{coc#status()}\ %-14.(%l,%c%V%)\ %P
 set modelines=0
 set nomodeline
 set lazyredraw
+set wildignore+=*/node_modules/*
+set wildignore+=*/coverage/*
 
 " lang specfic format settings
 autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
@@ -113,3 +120,6 @@ so ~/.db_connections.vim
 
 " python
 autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
+
+" tidalcycles
+let g:tidal_target = "terminal"
