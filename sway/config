@@ -10,7 +10,7 @@ floating_modifier $mod
 bindsym $mod+Return exec $term
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+escape kill
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
@@ -91,7 +91,7 @@ bindsym $mod+Shift+r restart
 # exit
 bindsym $mod+Shift+e exec "swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your session.' -b 'Yes, exit sway' 'sway exit'"
 # lock screen
-bindsym $mod+p exec swaylock -u -c 000000
+bindsym $mod+p exec swaylock -c 000000
 # remove border
 bindsym $mod+b border toggle
 # screen shots
@@ -160,3 +160,8 @@ input "1739:0:Synaptics_TM3288-011" {
 input "1:1:AT_Translated_Set_2_keyboard" {
     xkb_layout us
 }
+
+# fix up to 20 second startup time of GTK applications
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK

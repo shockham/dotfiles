@@ -1,12 +1,13 @@
 # https://lobste.rs/rss tech dev
-https://lobste.rs/t/programming,rust,graphics,art,design,plt.rss
-https://this-week-in-rust.org/rss.xml tech rust dev
-https://readrust.net/all/feed.rss tech rust dev
+# https://lobste.rs/t/programming,graphics,art.rss
+# https://this-week-in-rust.org/rss.xml tech rust dev
+# https://readrust.net/all/feed.rss tech rust dev
 # https://n-o-d-e.net/rss/rss.xml tech
 https://usesthis.com/feed.atom
 # https://www.dezeen.com/tag/minimalist-architecture/rss arch min
-http://leibal.com/rss arch min
+# http://leibal.com/rss arch min
 # https://morewithlessdesign.com/en/feed/ min
-https://popupcity.net/feed/
+# https://popupcity.net/feed/
 https://branch.climateaction.tech/feed/
 # https://www.dailyminimal.com/rss min
+https://www.cabinetmagazine.org/rss/rss.xml
