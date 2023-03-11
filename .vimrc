@@ -25,13 +25,6 @@ Plug 'andreasvc/vim-256noir'
 
 " Language specific
 
-" rust
-Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
-
-" glsl
-Plug 'tikhomirov/vim-glsl'
-
 " sql
 Plug 'joereynolds/SQHell.vim'
 
@@ -40,12 +33,6 @@ Plug 'jparise/vim-graphql'
 
 " typescript
 Plug 'leafgarland/typescript-vim'
-
-" tidalcycles
-Plug 'tidalcycles/vim-tidal'
-
-" hare
-Plug 'https://git.sr.ht/~sircmpwn/hare.vim'
 
 call plug#end()
 
@@ -81,6 +68,7 @@ autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype vue setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
 
 " syntax
 syntax on
@@ -102,15 +90,19 @@ noremap <C-w>- :resize -5<CR>
 noremap <C-w>< :vertical:resize -5<CR>
 noremap <C-w>> :vertical:resize +5<CR>
 
-" rust
-let g:racer_cmd = "racer"
-let g:racer_experimental_completer = 1
-au FileType rust nmap gd <Plug>(rust-def)
+function! CheckBackspace() abort
+let col = col('.') - 1
+return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
 
-" language server
-let g:LanguageClient_serverCommands = {
-    \ 'rust': ['rustup', 'run', 'nightly', 'rls'],
-    \ }
+" Insert <tab> when previous text is space, refresh completion if not.
+inoremap <silent><expr> <TAB>
+\ coc#pum#visible() ? coc#pum#next(1):
+\ CheckBackspace() ? "\<Tab>" :
+\ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
 " markdown
 au FileType markdown set spell spelllang=en_gb
@@ -120,6 +112,3 @@ so ~/.db_connections.vim
 
 " python
 autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
-
-" tidalcycles
-let g:tidal_target = "terminal"

@@ -8,7 +8,7 @@ ZSH_THEME="shockham"
 ZSH_CUSTOM="$HOME/.zsh_custom"
 
 # loaded plugins
-plugins=(git tmux pip cargo python pylint docker docker-compose zsh-autosuggestions yarn ripgrep)
+plugins=(git tmux pip python pylint docker docker-compose zsh-autosuggestions yarn ripgrep)
 
 # User configuration
 
@@ -34,6 +34,8 @@ alias dcr='dc run --rm'
 alias dcd='dc down'
 
 alias gpo='git push origin HEAD'
+alias gpull='git pull origin HEAD'
+alias gpnv='git push --no-verify origin HEAD'
 
 alias kpl='keepassxc-cli ls $KPXC_DB /'
 alias kpg='keepassxc-cli show -a UserName -a Password $KPXC_DB'
