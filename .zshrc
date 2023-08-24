@@ -44,6 +44,11 @@ alias work='pushd ~/Code/work'
 
 alias am='alsamixer -g'
 
+alias netup='nmcli con up'
+alias netls='nmcli d wifi'
+alias netcon='nmcli d wifi connect'
+alias netscan='nmcli d wifi rescan'
+
 
 source $ZSH/oh-my-zsh.sh
 
