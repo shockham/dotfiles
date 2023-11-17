@@ -25,14 +25,14 @@ Plug 'andreasvc/vim-256noir'
 
 " Language specific
 
-" sql
-Plug 'joereynolds/SQHell.vim'
-
 " graphql
 Plug 'jparise/vim-graphql'
 
 " typescript
 Plug 'leafgarland/typescript-vim'
+
+" hare
+Plug 'https://git.sr.ht/~sircmpwn/hare.vim'
 
 call plug#end()
 
@@ -106,9 +106,3 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
 " markdown
 au FileType markdown set spell spelllang=en_gb
-
-" sql
-so ~/.db_connections.vim
-
-" python
-autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
