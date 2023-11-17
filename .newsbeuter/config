@@ -5,7 +5,7 @@ refresh-on-startup yes
 # reload-time 15
 reload-threads 4
 # show-read-feeds no
-browser "firefox %u"
+browser "librewolf %u"
 # colors
 color listnormal          color231  black
 color listnormal_unread   color231   black  bold
