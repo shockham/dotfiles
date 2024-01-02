@@ -108,4 +108,4 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 au FileType markdown set spell spelllang=en_gb
 
 " coc extensions
-let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-prettier', 'coc-eslint', 'coc-rust-analyzer', '@yaegassy/coc-volar']
+let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-prettier', 'coc-eslint', 'coc-rust-analyzer', '@yaegassy/coc-volar', 'coc-clangd']
