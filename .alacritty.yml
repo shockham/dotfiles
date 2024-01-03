@@ -18,7 +18,7 @@ font:
   italic:
     family: 'Hack'
 
-  size: 13
+  size: 10
 
   offset:
     x: 0

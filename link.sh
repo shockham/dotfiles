@@ -19,19 +19,19 @@ mkdir -p ~/.vim/swap
 mkdir -p ~/.vim/undo
 
 # reload tmux conf
-tmux source ~/.tmux.conf
+# tmux source ~/.tmux.conf
 
 # i3
-ln -sf $DOTFILE_PATH/i3 ~/.config/
+# ln -sf $DOTFILE_PATH/i3 ~/.config/
 
 # sway
-ln -sf $DOTFILE_PATH/sway ~/.config/
+# ln -sf $DOTFILE_PATH/sway ~/.config/
 
 # rofi
-ln -sf $DOTFILE_PATH/rofi ~/.config/
+# ln -sf $DOTFILE_PATH/rofi ~/.config/
 
 # irssi
-ln -sf $DOTFILE_PATH/.irssi ~
+# ln -sf $DOTFILE_PATH/.irssi ~
 
 # cmus themes
 ln -sf $DOTFILE_PATH/.cmus ~

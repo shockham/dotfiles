@@ -90,12 +90,13 @@ noremap <C-w>- :resize -5<CR>
 noremap <C-w>< :vertical:resize -5<CR>
 noremap <C-w>> :vertical:resize +5<CR>
 
+" coc-nvim: config
 function! CheckBackspace() abort
-let col = col('.') - 1
-return !col || getline('.')[col - 1]  =~ '\s'
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
-" Insert <tab> when previous text is space, refresh completion if not.
+" coc-nvim: Insert <tab> when previous text is space, refresh completion if not.
 inoremap <silent><expr> <TAB>
 \ coc#pum#visible() ? coc#pum#next(1):
 \ CheckBackspace() ? "\<Tab>" :
@@ -104,8 +105,20 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
 inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
 
+" coc-nvim: GoTo code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
 " markdown
 au FileType markdown set spell spelllang=en_gb
 
 " coc extensions
 let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-prettier', 'coc-eslint', 'coc-rust-analyzer', '@yaegassy/coc-volar', 'coc-clangd']
+
+" python
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
+
+" go
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
