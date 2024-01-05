@@ -90,6 +90,11 @@ noremap <C-w>- :resize -5<CR>
 noremap <C-w>< :vertical:resize -5<CR>
 noremap <C-w>> :vertical:resize +5<CR>
 
+" Start up
+autocmd VimEnter * :vs
+autocmd VimEnter * :wincmd l
+autocmd VimEnter * :terminal
+
 " coc-nvim: config
 function! CheckBackspace() abort
     let col = col('.') - 1
