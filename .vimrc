@@ -73,6 +73,7 @@ autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
 " syntax
 syntax on
 colorscheme 256_noir
+set termguicolors
 
 " colorcolumn
 set colorcolumn=100

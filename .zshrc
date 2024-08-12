@@ -8,7 +8,7 @@ ZSH_THEME="shockham"
 ZSH_CUSTOM="$HOME/.zsh_custom"
 
 # loaded plugins
-plugins=(git tmux pip python pylint docker docker-compose zsh-autosuggestions yarn ripgrep)
+plugins=(git tmux pip python pylint docker docker-compose zsh-autosuggestions)
 
 # User configuration
 
