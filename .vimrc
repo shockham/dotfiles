@@ -13,7 +13,6 @@ call plug#begin()
 if !has('nvim')
     Plug 'tpope/vim-sensible'
 endif
-Plug 'terryma/vim-multiple-cursors'
 Plug 'qpkorr/vim-bufkill'
 Plug 'Raimondi/delimitMate'
 Plug 'ctrlpvim/ctrlp.vim'
