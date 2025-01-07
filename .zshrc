@@ -49,6 +49,8 @@ alias netls='nmcli d wifi'
 alias netcon='nmcli d wifi connect'
 alias netscan='nmcli d wifi rescan'
 
+alias streams='watch --color -n 900 "witcht < ~/.witcht"'
+
 
 source $ZSH/oh-my-zsh.sh
 
@@ -61,7 +63,7 @@ export ANDROID_SDK_ROOT="/home/android-sdk/"
 export ANDROID_NDK_ROOT="/home/android-ndk/"
 
 # rust build caching
-export RUSTC_WRAPPER=sccache
+# export RUSTC_WRAPPER=sccache
 
 # base PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/games"
