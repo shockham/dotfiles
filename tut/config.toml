@@ -26,12 +26,12 @@ date-tody-format="15:04"
 
 # This displays relative dates instead for statuses that are one day or older
 # the output is 1y2m1d (1 year 2 months and 1 day)
-# 
+#
 # The value is an integer
 # -1     = don't use relative dates
 #  0     = always use relative dates, except for dates < 1 day
 #  1 - ∞ = number of days to use relative dates
-# 				
+#
 # Value: 28 will display a relative date for toots that are between 1-28 days
 # old. Otherwise it will use the short or long format.
 # default=-1
@@ -145,7 +145,7 @@ name="local"
 type="local"
 hide-boosts=false
 hide-replies=false
-# 
+#
 # [[general.timelines]]
 # name="Notifications"
 # type="notifications"
@@ -211,11 +211,11 @@ hide-replies=false
 
 # [[general.leader-actions]]
 # You set actions leader-key with one or more leader-actions.
-# 
+#
 # The shortcuts are up to you, but keep them quite short and make sure they
 # don't collide. If you have one shortcut that is "f" and an other one that is
-# "fav", the one with "f" will always run and "fav" will never run. 
-# 
+# "fav", the one with "f" will always run and "fav" will never run.
+#
 # Some special actions that requires data to be set:
 # pane is special as it's a shortcut for switching between the panes you've set
 # under general and they are zero indexed. pane 0 = your first timeline, pane 1
@@ -230,12 +230,12 @@ hide-replies=false
 # [[general.leader-actions]]
 # type="close-pane"
 # shortcut="q"
-# 
+#
 # [[general.leader-actions]]
 # type="list-split"
 # data="row"
 # shortcut="r"
-# 
+#
 # [[general.leader-actions]]
 # type="list-split"
 # data="column"
@@ -391,7 +391,7 @@ posts=false
 # terminal = false
 # hint = "[C]hrome"
 # keys = ["c", "C"]
-# 		
+#
 # [[open-custom.programs]]
 # program = 'imv'
 # terminal = false
@@ -461,15 +461,15 @@ posts=false
 # The theme to use. You can use some themes that comes bundled with tut. Check
 # out the themes available on the URL below. If a theme is named nord.toml you
 # just write theme="nord".
-# 
+#
 # https://github.com/RasmusLindroth/tut/tree/master/config/themes
-# 
+#
 # You can also create a theme file in your config directory e.g.
 # ~/.config/tut/themes/foo.toml and then set theme=foo.
-# 
+#
 # If you want to use your own theme but don't want to create a new file, set
 # theme="none" and then you can create your own theme below.
-# 
+#
 # default="default"
 theme="shockham"
 
@@ -589,28 +589,28 @@ timeline-name-text=""
 
 [input]
 # In this section you set the keys to be used in tut.
-# 		
+#
 # The hint option lets you set which part of the hint that will be highlighted
 # in tut. E.g. [F]avorite results in a highlighted F and the rest of the text is
 # displayed normally.
 # Some of the options can be in two states, like favorites, so there you can set
 # the hint-alt option to something like Un[F]avorite.
-# 
+#
 # Examples:
 # "[D]elete" = Delete with a highlighted D
 # "Un[F]ollow" = UnFollow with a highlighted F
 # "[Enter]" = Enter where everything is highlighted
 # "Yan[K]" = YanK with a highlighted K
-# 
+#
 # The keys option lets you define what key that should be pressed. This is
 # limited to on character only and they are case sensitive.
 # Example:
 # keys=["j","J"]
-# 
+#
 # You can also set special-keys and they're for keys like Escape and Enter. To
 # find the names of special keys you have to go to the following site and look
 # for "var KeyNames = map[Key]string{"
-# 
+#
 # https://github.com/gdamore/tcell/blob/master/key.go
 
 [input.global-down]
