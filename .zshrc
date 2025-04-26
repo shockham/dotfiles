@@ -51,6 +51,7 @@ alias netscan='nmcli d wifi rescan'
 
 alias streams='watch --color -n 900 "witcht < ~/.witcht"'
 alias vod='witcht --vod'
+alias mpa='mpv --vid=no'
 
 
 source $ZSH/oh-my-zsh.sh

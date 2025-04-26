@@ -30,6 +30,9 @@ mkdir -p ~/.vim/undo
 # rofi
 # ln -sf $DOTFILE_PATH/rofi ~/.config/
 
+# rio
+# ln -sf $DOTFILE_PATH/rio ~/.config/
+
 # irssi
 # ln -sf $DOTFILE_PATH/.irssi ~
 
