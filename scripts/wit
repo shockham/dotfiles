@@ -1,2 +1,0 @@
-#!/bin/bash
-mpv `witcht $1`

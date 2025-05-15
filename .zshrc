@@ -36,6 +36,14 @@ alias dcd='dc down'
 alias gpo='git push origin HEAD'
 alias gpull='git pull origin HEAD'
 alias gpnv='git push --no-verify origin HEAD'
+ait () {
+    git add --all
+    git commit -m "$1"
+}
+gco () {
+    git checkout $1
+    git pull origin $1
+}
 
 alias kpl='keepassxc-cli ls $KPXC_DB /'
 alias kpg='keepassxc-cli show -a UserName -a Password $KPXC_DB'
@@ -52,6 +60,12 @@ alias netscan='nmcli d wifi rescan'
 alias streams='watch --color -n 900 "witcht < ~/.witcht"'
 alias vod='witcht --vod'
 alias mpa='mpv --vid=no'
+wit () {
+    mpv `witcht $1`
+}
+vwit () {
+    cvlc --no-video-title-show `witcht $1` 
+}
 
 
 source $ZSH/oh-my-zsh.sh
