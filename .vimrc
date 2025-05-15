@@ -120,7 +120,7 @@ nmap <silent> gr <Plug>(coc-references)
 au FileType markdown set spell spelllang=en_gb
 
 " coc extensions
-let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-prettier', 'coc-eslint', 'coc-rust-analyzer', '@yaegassy/coc-volar', 'coc-clangd']
+let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-clangd']
 
 " python
 autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
