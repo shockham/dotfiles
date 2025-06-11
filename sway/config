@@ -154,6 +154,7 @@ input "1739:0:Synaptics_TM3288-011" {
     tap enabled
     # accel_profile flat
     pointer_accel 1
+    dwt disabled
 }
 
 # keyboard input
