@@ -61,7 +61,7 @@ alias streams='watch --color -n 900 "witcht < ~/.witcht"'
 alias vod='witcht --vod'
 alias mpa='mpv --vid=no'
 wit () {
-    mpv `witcht $1`
+    mpv --ao=sdl `witcht $1`
 }
 vwit () {
     cvlc --no-video-title-show `witcht $1` 
