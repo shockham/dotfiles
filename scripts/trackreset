@@ -1,0 +1,4 @@
+printf none > /sys/bus/serio/devices/serio1/drvctl
+printf reconnect > /sys/bus/serio/devices/serio1/drvctl
+modprobe -r psmouse
+modprobe psmouse
