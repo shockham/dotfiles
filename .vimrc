@@ -22,17 +22,6 @@ Plug 'editorconfig/editorconfig-vim'
 " theme
 Plug 'andreasvc/vim-256noir'
 
-" Language specific
-
-" graphql
-Plug 'jparise/vim-graphql'
-
-" typescript
-Plug 'leafgarland/typescript-vim'
-
-" hare
-Plug 'https://git.sr.ht/~sircmpwn/hare.vim'
-
 call plug#end()
 
 " general settings
@@ -121,9 +110,6 @@ au FileType markdown set spell spelllang=en_gb
 
 " coc extensions
 let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-clangd']
-
-" python
-autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json']
 
 " go
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
