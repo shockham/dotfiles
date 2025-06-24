@@ -32,6 +32,9 @@ autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
 
+" Auto generate tags file on file write of *.c and *.h files
+autocmd BufWritePost *.c,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS . &
+
 " Keybindings
 nmap <silent> <C-c>c :%s/\s\+$//<cr>
 map! jj <Esc>
