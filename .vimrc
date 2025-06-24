@@ -13,10 +13,6 @@ call plug#begin()
 if !has('nvim')
     Plug 'tpope/vim-sensible'
 endif
-Plug 'qpkorr/vim-bufkill'
-Plug 'Raimondi/delimitMate'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'editorconfig/editorconfig-vim'
 
 " theme
@@ -44,18 +40,16 @@ set undofile
 set undolevels=1000
 set undoreload=10000
 set history=5000
-set statusline=%<%f\ %h%m%r%=%{coc#status()}\ %-14.(%l,%c%V%)\ %P
 set modelines=0
 set nomodeline
 set lazyredraw
 set wildignore+=*/node_modules/*
 set wildignore+=*/coverage/*
+set tags+=/usr/include/tags
 
 " lang specfic format settings
-autocmd Filetype dart setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype vue setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype css setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
-autocmd Filetype scss setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
 
 " syntax
@@ -84,32 +78,5 @@ autocmd VimEnter * :vs
 autocmd VimEnter * :wincmd l
 autocmd VimEnter * :terminal
 
-" coc-nvim: config
-function! CheckBackspace() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~ '\s'
-endfunction
-
-" coc-nvim: Insert <tab> when previous text is space, refresh completion if not.
-inoremap <silent><expr> <TAB>
-\ coc#pum#visible() ? coc#pum#next(1):
-\ CheckBackspace() ? "\<Tab>" :
-\ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
-
-inoremap <expr> <cr> coc#pum#visible() ? coc#_select_confirm() : "\<CR>"
-
-" coc-nvim: GoTo code navigation
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
 " markdown
 au FileType markdown set spell spelllang=en_gb
-
-" coc extensions
-let g:coc_global_extensions = ['coc-go', 'coc-html', 'coc-css', 'coc-clangd']
-
-" go
-autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
