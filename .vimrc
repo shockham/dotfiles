@@ -26,6 +26,8 @@ set lazyredraw
 set wildignore+=*/node_modules/*
 set wildignore+=*/coverage/*
 set tags+=/usr/include/tags
+set omnifunc=syntaxcomplete#Complete
+set noequalalways
 
 " lang specfic format settings
 autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
@@ -34,6 +36,7 @@ autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
 
 " Auto generate tags file on file write of *.c and *.h files
 autocmd BufWritePost *.c,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS . &
+autocmd BufWritePost *.go silent! !ctags -R . &
 
 " Keybindings
 nmap <silent> <C-c>c :%s/\s\+$//<cr>
