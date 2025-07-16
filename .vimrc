@@ -28,6 +28,7 @@ set wildignore+=*/coverage/*
 set tags+=/usr/include/tags
 set omnifunc=syntaxcomplete#Complete
 set noequalalways
+set laststatus=0
 
 " lang specfic format settings
 autocmd Filetype html setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
@@ -58,13 +59,6 @@ au FileType markdown set spell spelllang=en_gb
 " syntax
 syntax on
 set termguicolors
-
-" colorcolumn
-set colorcolumn=100
-hi ColorColumn ctermbg=235 guibg=#2c2d27
-let &colorcolumn=join(range(100,999),",")
-hi clear VertSplit
-hi! VertSplit ctermbg=235 ctermfg=235
 
 " colours
 " Vendored from https://github.com/andreasvc/vim-256noir
@@ -150,3 +144,8 @@ highlight! link Cursor StatusLine
 highlight! link Underlined SpellRare
 highlight! link rstEmphasis SpellRare
 highlight! link diffChanged DiffChange
+
+" colorcolumn
+set colorcolumn=100
+hi ColorColumn ctermbg=233 guibg=#121212
+let &colorcolumn=join(range(100,999),",")
