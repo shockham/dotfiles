@@ -7,11 +7,11 @@ reload-threads 4
 # show-read-feeds no
 browser "librewolf %u"
 # colors
-color listnormal          color231  black
-color listnormal_unread   color231   black  bold
-color listfocus           color16  color231
-color listfocus_unread    color16  color231   bold
-color info                color16  color231   bold
+color listnormal          color231 black
+color listnormal_unread   color231 black  bold
+color listfocus           color231  color240
+color listfocus_unread    color231  color240   bold
+color info                color236 color16
 # tor
 # proxy 127.0.0.1:9150
 # bindings
