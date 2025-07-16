@@ -13,6 +13,7 @@ https://inv.nadeko.net/feed/channel/UCJVsV7N5LnWIHv7e-DRh4Qg climbing
 https://feeds.buzzsprout.com/1996606.rss climbing
 
 https://forum.merveilles.town/rss.xml merv
+http://100r.co/links/rss.xml
 
 https://commandcenter.blogspot.com/feeds/posts/default tech
 https://research.swtch.com/feed.atom tech
@@ -29,6 +30,8 @@ https://blog.pico.sh/rss tech
 https://drewdevault.com/blog/index.xml tech
 https://ln.ht/_/feed/~ddevault tech
 https://simonrepp.com/feed.rss tech
+https://fgiesen.wordpress.com/feed/ tech
+https://gustedt.wordpress.com/feed/ tech
 
 https://jwaaaap.substack.com/feed games
 
@@ -44,3 +47,6 @@ https://grimgrains.com/links/rss.xml recipes
 
 https://inv.nadeko.net/feed/channel/UC3zoY9LapZERsN7caDKqz0w japan anime manga
 https://en.wikipedia.org/w/index.php?title=Lazarus_(TV_series)&action=history&feed=rss anime
+
+https://feeds.bbci.co.uk/sport/football/teams/derby-county/rss.xml sport
+https://feeds.bbci.co.uk/sport/cricket/teams/england/rss.xml sport
