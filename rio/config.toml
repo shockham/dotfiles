@@ -205,8 +205,9 @@
 #
 # Example:
 [fonts]
-size = 17
+size = 20
 family = "Fira Code"
+extras = [{ family = "Noto Sans CJK JP" }]
 #
 # [fonts.regular]
 # family = "cascadiamono"
