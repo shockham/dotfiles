@@ -6,7 +6,6 @@ ln -sf $DOTFILE_PATH/.tmux.conf ~/.tmux.conf
 ln -sf $DOTFILE_PATH/.zshrc ~/.zshrc
 ln -sf $DOTFILE_PATH/.zsh_custom ~/.zsh_custom
 ln -sf $DOTFILE_PATH/scripts ~/shk_scripts
-ln -sf $DOTFILE_PATH/.alacritty.yml ~/.alacritty.yml
 
 # newsbeuter
 mkdir -p ~/.newsboat
