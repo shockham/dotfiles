@@ -1,2 +1,0 @@
-#!/bin/bash
-OPENSSL_CONF="" $HOME/Downloads/Ripcord.AppImage
