@@ -1,0 +1,27 @@
+# fonts
+font-family = "Fira Code"
+font-size = 15
+
+# colours
+palette = 0=#000000
+palette = 1=#8e8e8e
+palette = 2=#6d6d6d
+palette = 3=#bfbfbf
+palette = 4=#828282
+palette = 5=#d54e53
+palette = 6=#eaeaea
+palette = 7=#cecece
+palette = 8=#666666
+palette = 9=#a0a0a0
+palette = 10=#7a7a7a
+palette = 11=#e5e5e5
+palette = 12=#939393
+palette = 13=#ff3334
+palette = 14=#ffffff
+palette = 15=#dddddd
+background = "#000000"
+foreground = "#eaeaea"
+cursor-color = #eaeaea
+cursor-text = #eaeaea
+selection-background = "#eaeaea"
+selection-foreground = "#000000"

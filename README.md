@@ -12,7 +12,7 @@ To symlink all the configurations:
 ### Terminal
 - [tmux](https://github.com/tmux/tmux)
 - [zsh](https://www.zsh.org/) + [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
-- [rio](https://rioterm.com/) 
+- [rio](https://rioterm.com/) or [ghostty](https://ghostty.org/)
 
 ### Text editor
 - [nvim](https://github.com/neovim/neovim)

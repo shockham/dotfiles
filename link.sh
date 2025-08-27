@@ -29,6 +29,9 @@ ln -sf $DOTFILE_PATH/rofi ~/.config/
 # rio
 ln -sf $DOTFILE_PATH/rio ~/.config/
 
+# ghostty
+ln -sf $DOTFILE_PATH/ghostty ~/.config/
+
 # irssi
 ln -sf $DOTFILE_PATH/.irssi ~
 
