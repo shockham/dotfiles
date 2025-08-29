@@ -22,6 +22,6 @@ palette = 15=#dddddd
 background = "#000000"
 foreground = "#eaeaea"
 cursor-color = #eaeaea
-cursor-text = #eaeaea
+cursor-text = #000000
 selection-background = "#eaeaea"
 selection-foreground = "#000000"
