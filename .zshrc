@@ -67,6 +67,10 @@ vwit () {
     cvlc --no-video-title-show `witcht $1` 
 }
 
+hex2col () {
+    perl -e 'foreach $a(@ARGV){print "\e[48:2::".join(":",unpack("C*",pack("H*",$a)))."m     \n     \n     \n\e[49m"};print "\n"' "$1"
+}
+
 
 source $ZSH/oh-my-zsh.sh
 
