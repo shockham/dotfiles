@@ -37,7 +37,7 @@ autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4
 
 " Auto generate tags file on file write of *.c and *.h files
 autocmd BufWritePost *.c,*.h silent! !ctags -R --c++-kinds=+p --fields=+iaS . &
-autocmd BufWritePost *.go silent! !ctags -R . &
+autocmd BufWritePost *.go silent! !ctags -R --fields=+iaS . &
 
 " Keybindings
 nmap <silent> <C-c>c :%s/\s\+$//<cr>

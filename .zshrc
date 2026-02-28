@@ -40,7 +40,7 @@ ait () {
     git add --all
     git commit -m "$1"
 }
-gco () {
+gcoo () {
     git checkout $1
     git pull origin $1
 }
@@ -57,11 +57,11 @@ alias netls='nmcli d wifi'
 alias netcon='nmcli d wifi connect'
 alias netscan='nmcli d wifi rescan'
 
-alias streams='watch --color -n 900 "witcht < ~/.witcht"'
+alias streams='watch --color -n 600 "witcht < ~/.witcht"'
 alias vod='witcht --vod'
 alias mpa='mpv --vid=no'
 wit () {
-    mpv --ao=sdl `witcht $1`
+    mpv --ao=pipewire `witcht $1`
 }
 vwit () {
     cvlc --no-video-title-show `witcht $1` 

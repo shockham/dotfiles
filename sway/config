@@ -1,6 +1,6 @@
 # global mod
 set $mod Mod4
-set $term alacritty
+set $term foot
 
 font pango:Hack 8.5
 
