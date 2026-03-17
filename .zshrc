@@ -85,6 +85,3 @@ export PATH="$PATH:$HOME/.local/bin:$HOME/shk_scripts"
 export PATH="$PATH:$HOME/go/bin"
 # rust
 export PATH="$PATH:$HOME/.cargo/bin"
-
-autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/local/bin/terraform terraform
