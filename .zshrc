@@ -74,9 +74,6 @@ source $ZSH/oh-my-zsh.sh
 # default editor is vim
 export EDITOR='vim'
 
-# rust build caching
-# export RUSTC_WRAPPER=sccache
-
 # base PATH
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/usr/games"
 # home
