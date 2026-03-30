@@ -1,25 +1,47 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-# Set name of the theme to load.
-ZSH_THEME="shockham"
-
-# Set location of custom dir
-ZSH_CUSTOM="$HOME/.zsh_custom"
-
-# loaded plugins
-plugins=(git tmux zsh-autosuggestions ssh-agent)
-
 # User configuration
+
+# Sets color variable such as $fg, $bg, $color and $reset_color
+autoload -U colors && colors
+# Expand variables and commands in PROMPT variables
+setopt prompt_subst
+
+# theme
+set_prompt() {
+    local git_branch_name=$(git symbolic-ref --short HEAD 2> /dev/null)
+    if [[ -z $git_branch_name ]]; then
+        PROMPT="■ %~/ "
+        return
+    fi
+
+    local git_status=$(git status --porcelain)
+    local git_dirty="*"
+    if [[ -z $git_status ]]; then
+        git_dirty=""
+    fi
+
+    PROMPT="■ %~/ %F{#000000}%K{#ffffff}${git_branch_name}${git_dirty}%k%f "
+}
+precmd_functions+=(set_prompt)
+
+# Changing/making/removing directory
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
+
+# auto suggestions
+source ~/.zsh_custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # alias'
 alias tmux='tmux -2'
 alias irssi='TERM=screen irssi'
 alias clear='clear && dirs -c'
-alias c='mold -run cargo'
+alias c='cargo'
 alias e='exa --color=never'
 alias b='bat'
 alias cl='clear'
+alias ls='ls --color=tty'
+alias l='ls -lah'
 
 alias dk='docker'
 alias dps='dk ps'
@@ -33,6 +55,7 @@ alias dcd='dc down'
 alias gpo='git push origin HEAD'
 alias gpull='git pull origin HEAD'
 alias gpnv='git push --no-verify origin HEAD'
+alias gd='git diff'
 ait () {
     git add --all
     git commit -m "$1"
@@ -61,15 +84,12 @@ wit () {
     mpv --ao=pipewire `witcht $1`
 }
 vwit () {
-    cvlc --no-video-title-show `witcht $1` 
+    cvlc --no-video-title-show `witcht $1`
 }
 
 hex2col () {
     perl -e 'foreach $a(@ARGV){print "\e[48:2::".join(":",unpack("C*",pack("H*",$a)))."m     \n     \n     \n\e[49m"};print "\n"' "$1"
 }
-
-
-source $ZSH/oh-my-zsh.sh
 
 # default editor is vim
 export EDITOR='vim'
