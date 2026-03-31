@@ -113,6 +113,7 @@ alias gpo='git push origin HEAD'
 alias gpull='git pull origin HEAD'
 alias gpnv='git push --no-verify origin HEAD'
 alias gd='git diff'
+alias gco='git checkout'
 ait () {
     git add --all
     git commit -m "$1"
