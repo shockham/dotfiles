@@ -4,6 +4,11 @@
 autoload -U colors && colors
 # Expand variables and commands in PROMPT variables
 setopt prompt_subst
+# Enable completions
+autoload -Uz compinit
+compinit
+# load some completions
+compdef _git git
 
 # theme
 set_prompt() {
@@ -41,7 +46,6 @@ setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space
 setopt hist_verify            # show command with history expansion to user before running it
 setopt share_history          # share command history data
-
 
 # auto suggestions
 source ~/.zsh_custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
